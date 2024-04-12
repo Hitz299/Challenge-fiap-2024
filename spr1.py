@@ -1,6 +1,6 @@
 import time;
 import random;
-
+'''
 email_criar_conta = input("Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
@@ -51,8 +51,8 @@ while senha_login != senha_criar_conta or email_criar_conta != email_login:
     
     
     if contador_tentativas <= 0:
-        print("Você atingiu a quantidade limite de tentativas, tente novamente após 60 segundos.")
-        time.sleep(60.0)
+        print("Você atingiu a quantidade limite de tentativas, tente novamente após 10 segundos.")
+        time.sleep(10.0)
     
     email_login = input("\nInforme seu email: ")
     senha_login = input("\nInforme sua senha: ")
@@ -62,6 +62,8 @@ while senha_login != senha_criar_conta or email_criar_conta != email_login:
 if email_criar_conta == email_login and senha_criar_conta == senha_login:
     print("Acesso liberado")
     
+'''
+
 print("\nO usuário foi direcionado para a página inicial do projeto")
 
 escolha = int(input("Na tela inicial, o usuário pode escolher entre:\n"
@@ -73,17 +75,48 @@ while escolha != 1 and escolha != 2:
     
       
 match escolha:
+    # Funcionalidade 1 -> Adicionar veículo
     case 1:
         chassi = input("\nInforme o chassi do veículo: ")
         placa =  input("\nInforme a placa do veículo: ")
 
-        carros = ("Fiat uno", "Ferrari", "Porshe", "Fiat toro", "Hyundai HB20",
+        carros = ("Fiat uno", "Ferrari", "Porsche", "Fiat toro", "Hyundai HB20",
                 "Volkswagen Gol", "Nissan Versa")
            
-        quantCarro = len(carros)
-        print(quantCarro)
-        veiculo_usuario = random.randrange(0,quantCarro-1)
-        print(f"Ok, seu {carros[veiculo_usuario]} foi Adicionado")
+        print(f"Ok, seu {random.choice(carros)} foi Adicionado")
         
+    # Funcionalidades 2 e 3
     case 2:
-        print(f"{carros}")
+        carros_usuario = ("Ferrari", "Porshe")
+        carro_escolhido: str
+        escolha_veiculo = int(input("Qual veículo você deseja selecionar?\n"
+                            +f"1 -> {carros_usuario[0]}\n"+
+                            f"2 -> {carros_usuario[1]}\n\n"))
+        
+        if escolha == 1:
+                carro_escolhido = carros_usuario[0]
+               
+        elif escolha == 2:
+                carro_escolhido = carros_usuario[1]
+               
+
+        print(f"Você selecionou o veículo {carro_escolhido}")
+
+        escolha = int(input("Qual serviço você gostaria de acessar para seu veículo?\n"
+                            +"1 -> Localizar veículo\n"
+                            +"2 -> Inspecionar erros do veículo\n\n"))
+        
+        # Funcionalidade 2 -> Localizar veículo
+        if escolha == 1:
+            if escolha_veiculo == 1:
+                print("Seu veículo foi localizado em:\nBrasil - SP - Piraporinha - Bairro do limoeiro - Rua da Goiaba")
+            elif escolha_veiculo == 2:
+                print("Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Capão redondo - Oficina de desmanche de veículos (clandestino)")
+            else:
+                 print("Escolha uma opção válida")
+        
+        # Funcionalidade 3 -> Inspecionar erros do veículo
+        elif escolha == 2:
+             quantErros = random.randrange(0, 4)
+             erros = ("embreagem", "correia", "cambio", "motor")
+
