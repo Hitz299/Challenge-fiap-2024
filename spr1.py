@@ -1,6 +1,6 @@
 import time;
 import random;
-'''
+
 email_criar_conta = input("Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
@@ -62,7 +62,6 @@ while senha_login != senha_criar_conta or email_criar_conta != email_login:
 if email_criar_conta == email_login and senha_criar_conta == senha_login:
     print("Acesso liberado")
     
-'''
 
 print("\nO usuário foi direcionado para a página inicial do projeto")
 
@@ -117,6 +116,34 @@ match escolha:
         
         # Funcionalidade 3 -> Inspecionar erros do veículo
         elif escolha == 2:
-             quantErros = random.randrange(0, 4)
-             erros = ("embreagem", "correia", "cambio", "motor")
-
+             erros = ["Nenhum", "embreagem", "correia", "cambio", "motor"]
+             numerosErros = random.randint(0, len(erros) - 1)
+             
+             if erros[numerosErros] != erros[0]:
+                erros.pop(0)
+                errosArray = []
+                errosIndex = 0
+                for i in (range(numerosErros)):
+                    errosIndex = random.randint(0, numerosErros)
+                    errosArray.append(erros[errosIndex])
+                    erros.pop(errosIndex)
+                    numerosErros -= 1
+                
+                print(errosArray)
+                
+                escolha = int(input("Deseja obter o valor do orçamento?\n"
+                                    "1 -> Sim\n2 -> Não"))
+                
+                if escolha == 1:
+                    print("O usuário foi direcionado para a tela inicial")
+                elif escolha == 2:
+                    pass
+                else:
+                    pass
+                
+             else:
+                print("O seu veiculo está perfeito")
+                
+            
+                
+        
