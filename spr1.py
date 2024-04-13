@@ -1,6 +1,6 @@
 import time;
 import random;
-
+'''
 email_criar_conta = input("Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
@@ -32,13 +32,13 @@ if escolha == 1:
         
             print(f"O código de verificação é:\n{codigo}")
         
-            codigo_usuario = int(input("Informe o código de verifição: "))
+            codigo_usuario = int(input(f"Informe o código de verifição: "))
             
     if codigo == codigo_usuario:
         senha_criar_conta = input("Digite uma nova senha: ")
     
-email_login = input("\nInforme seu email: ")
-senha_login = input("\nInforme sua senha: ")
+email_login = input(f"\nInforme seu email: ")
+senha_login = input(f"\nInforme sua senha: ")
 contador_tentativas = 3
 
 
@@ -54,32 +54,32 @@ while senha_login != senha_criar_conta or email_criar_conta != email_login:
         print("Você atingiu a quantidade limite de tentativas, tente novamente após 10 segundos.")
         time.sleep(10.0)
     
-    email_login = input("\nInforme seu email: ")
-    senha_login = input("\nInforme sua senha: ")
+    email_login = input(f"\nInforme seu email: ")
+    senha_login = input(f"\nInforme sua senha: ")
 
     
 
 if email_criar_conta == email_login and senha_criar_conta == senha_login:
-    print("Acesso liberado")
+    print(f"Acesso liberado")
     
-
+'''
 print("\nO usuário foi direcionado para a página inicial do projeto")
 
-escolha = int(input("Na tela inicial, o usuário pode escolher entre:\n"
-                +"1 - Adicionar novos veículos a plataforma\n"
-                +"2 - Acessar informações dos veículos que ele já possui\n\n"))
+escolha = int(input(f"Na tela inicial, o usuário pode escolher entre:\n"
+                +f"1 - Adicionar novos veículos a plataforma\n"
+                +f"2 - Acessar informações dos veículos que ele já possui\n\n"))
 
 while escolha != 1 and escolha != 2:
-    escolha = int(input("\nEntada inválida, escolha uma das opções anteriores: "))
+    escolha = int(input(f"\nEntada inválida, escolha uma das opções anteriores: "))
     
       
 match escolha:
     # Funcionalidade 1 -> Adicionar veículo
     case 1:
-        chassi = input("\nInforme o chassi do veículo: ")
-        placa =  input("\nInforme a placa do veículo: ")
+        chassi = input(f"\nInforme o chassi do veículo: ")
+        placa =  input(f"\nInforme a placa do veículo: ")
 
-        carros = ("Fiat uno", "Ferrari", "Porsche", "Fiat toro", "Hyundai HB20",
+        carros = (f"Fiat uno", "Ferrari", "Porsche", "Fiat toro", "Hyundai HB20",
                 "Volkswagen Gol", "Nissan Versa")
            
         print(f"Ok, seu {random.choice(carros)} foi Adicionado")
@@ -88,7 +88,7 @@ match escolha:
     case 2:
         carros_usuario = ("Ferrari", "Porshe")
         carro_escolhido: str
-        escolha_veiculo = int(input("Qual veículo você deseja selecionar?\n"
+        escolha_veiculo = int(input(f"Qual veículo você deseja selecionar?\n"
                             +f"1 -> {carros_usuario[0]}\n"+
                             f"2 -> {carros_usuario[1]}\n\n"))
         
@@ -101,18 +101,18 @@ match escolha:
 
         print(f"Você selecionou o veículo {carro_escolhido}")
 
-        escolha = int(input("Qual serviço você gostaria de acessar para seu veículo?\n"
+        escolha = int(input(f"Qual serviço você gostaria de acessar para seu veículo?\n"
                             +"1 -> Localizar veículo\n"
                             +"2 -> Inspecionar erros do veículo\n\n"))
         
         # Funcionalidade 2 -> Localizar veículo
         if escolha == 1:
             if escolha_veiculo == 1:
-                print("Seu veículo foi localizado em:\nBrasil - SP - Piraporinha - Bairro do limoeiro - Rua da Goiaba")
+                print(f"Seu veículo foi localizado em:\nBrasil - SP - Piraporinha - Bairro do limoeiro - Rua da Goiaba")
             elif escolha_veiculo == 2:
-                print("Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Capão redondo - Oficina de desmanche de veículos (clandestino)")
+                print(f"Seu veículo foi localizado em:\nBrasil - SP - São Paulo - Capão redondo - Oficina de desmanche de veículos (clandestino)")
             else:
-                 print("Escolha uma opção válida")
+                 print(f"Escolha uma opção válida")
         
         # Funcionalidade 3 -> Inspecionar erros do veículo
         elif escolha == 2:
@@ -121,28 +121,41 @@ match escolha:
              
              if erros[numerosErros] != erros[0]:
                 erros.pop(0)
-                errosArray = []
+                errosList = []
                 errosIndex = 0
                 for i in (range(numerosErros)):
                     errosIndex = random.randint(0, numerosErros)
-                    errosArray.append(erros[errosIndex])
+                    errosList.append(erros[errosIndex])
                     erros.pop(errosIndex)
                     numerosErros -= 1
                 
-                print(errosArray)
+                print(errosList)
                 
-                escolha = int(input("Deseja obter o valor do orçamento?\n"
-                                    "1 -> Sim\n2 -> Não"))
+                escolha = int(input(f"Deseja obter o valor do orçamento?\n"
+                                    "1 -> Sim\n2 -> Não\n"))
                 
+                while escolha != 1 and escolha != 2:
+                    escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
                 if escolha == 1:
-                    print("O usuário foi direcionado para a tela inicial")
+                    valor_orcamento = 0.0
+                    if errosList.__contains__("embreagem"):
+                        valor_orcamento += 400.00
+                    if errosList.__contains__("correia"):
+                        valor_orcamento += 500.00
+                    if errosList.__contains__("cambio"):
+                        valor_orcamento += 3500.00
+                    if errosList.__contains__("motor"):
+                        valor_orcamento += 4000.00
+                        
+                    print(f"\n\nO orçamento para reparo completo do seu\n"
+                          +f"veículo fiou: {valor_orcamento: .2f}R$")
+                    
                 elif escolha == 2:
-                    pass
-                else:
-                    pass
+                    print(f"O usuário foi direcionado para a tela inicial")
+                
                 
              else:
-                print("O seu veiculo está perfeito")
+                print(f"O seu veiculo está perfeito")
                 
             
                 
