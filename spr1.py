@@ -1,6 +1,10 @@
 import time;
 import random;
-'''
+
+def erro_entrada(escolha):
+     while escolha != 1 and escolha != 2:
+                    escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
+
 email_criar_conta = input("Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
@@ -10,33 +14,36 @@ senha_criar_conta = input("Ok, Agora crie uma senha forte para proteger sua cont
 while len(senha_criar_conta) < 8 :
     senha_criar_conta = input("\nSua senha deve contar mais de 8 caracteres: ")
     
-print("\nO usuário foi direcionado para a tela de login\n\n"
-      +"1 -> caso tenha esquecido a senha\n" + 
-      "Qualquer outro valor numérico -> caso queira prosseguir com o login")
+print(f"\nO usuário foi direcionado para a tela de login\n\n"
+      +f"1 -> caso tenha esquecido a senha\n" + 
+      f"Qualquer outro valor numérico -> caso queira prosseguir com o login")
 
-escolha = int(input("\nDigite sua escolha: "))
+escolha = int(input(f"\nDigite sua escolha: "))
 
 if escolha == 1:
-    email_recupecao = input("\n Informe seu email para que possamos enviar"
+    email_recupecao = input(f"\n Informe seu email para que possamos enviar"
                             +"o código de verificação: ")    
+    if email_criar_conta == email_recupecao:
+        codigo = int(random.randrange(10000, 99999))
+        # Simulando o código de verificação sendo enviado para o email do usuário
+        print(f"O código de verificação é:\n{codigo}")
     
-    codigo = int(random.randrange(10000, 99999))
-    # Simulando o código de verificação sendo enviado para o email do usuário
-    print(f"O código de verificação é:\n{codigo}")
+        codigo_usuario = int(input(f"Informe o código de verificação: "))
     
-    codigo_usuario = int(input("Informe o código de verificação: "))
-    
-    while codigo_usuario != codigo:
-            print("\n\nO Código informado está errado\n")
+        while codigo_usuario != codigo:
+            print(f"\n\nO Código informado está errado\n")
             codigo = int(random.randrange(10000, 99999))
         
             print(f"O código de verificação é:\n{codigo}")
         
             codigo_usuario = int(input(f"Informe o código de verifição: "))
             
-    if codigo == codigo_usuario:
-        senha_criar_conta = input("Digite uma nova senha: ")
-    
+        if codigo == codigo_usuario:
+            senha_criar_conta = input(f"Digite uma nova senha: ")
+        
+    else:
+        print(f"Email inválido, você foi desconectado")
+        exit()
 email_login = input(f"\nInforme seu email: ")
 senha_login = input(f"\nInforme sua senha: ")
 contador_tentativas = 3
@@ -46,12 +53,12 @@ contador_tentativas = 3
 while senha_login != senha_criar_conta or email_criar_conta != email_login:
 
     contador_tentativas -= 1
-    print("Email ou senha estão incorretos, por favor, preencha os campos novamente\n"
+    print(f"Email ou senha estão incorretos, por favor, preencha os campos novamente\n"
             +f"Você ainda possui {contador_tentativas} tentativas")
     
     
     if contador_tentativas <= 0:
-        print("Você atingiu a quantidade limite de tentativas, tente novamente após 10 segundos.")
+        print(f"Você atingiu a quantidade limite de tentativas, tente novamente após 10 segundos.")
         time.sleep(10.0)
     
     email_login = input(f"\nInforme seu email: ")
@@ -62,15 +69,14 @@ while senha_login != senha_criar_conta or email_criar_conta != email_login:
 if email_criar_conta == email_login and senha_criar_conta == senha_login:
     print(f"Acesso liberado")
     
-'''
-print("\nO usuário foi direcionado para a página inicial do projeto")
+
+print(f"\nO usuário foi direcionado para a página inicial do projeto")
 
 escolha = int(input(f"Na tela inicial, o usuário pode escolher entre:\n"
                 +f"1 - Adicionar novos veículos a plataforma\n"
                 +f"2 - Acessar informações dos veículos que ele já possui\n\n"))
 
-while escolha != 1 and escolha != 2:
-    escolha = int(input(f"\nEntada inválida, escolha uma das opções anteriores: "))
+erro_entrada(escolha)
     
       
 match escolha:
@@ -92,6 +98,8 @@ match escolha:
                             +f"1 -> {carros_usuario[0]}\n"+
                             f"2 -> {carros_usuario[1]}\n\n"))
         
+        erro_entrada(escolha)
+        
         if escolha == 1:
                 carro_escolhido = carros_usuario[0]
                
@@ -102,9 +110,10 @@ match escolha:
         print(f"Você selecionou o veículo {carro_escolhido}")
 
         escolha = int(input(f"Qual serviço você gostaria de acessar para seu veículo?\n"
-                            +"1 -> Localizar veículo\n"
-                            +"2 -> Inspecionar erros do veículo\n\n"))
+                            +f"1 -> Localizar veículo\n"
+                            +f"2 -> Inspecionar erros do veículo\n\n"))
         
+        erro_entrada(escolha)
         # Funcionalidade 2 -> Localizar veículo
         if escolha == 1:
             if escolha_veiculo == 1:
@@ -117,7 +126,7 @@ match escolha:
         # Funcionalidade 3 -> Inspecionar erros do veículo
         elif escolha == 2:
              erros = ["Nenhum", "embreagem", "correia", "cambio", "motor"]
-             numerosErros = random.randint(0, len(erros) - 1)
+             numerosErros = random.randint(0, len(erros) -2)
              
              if erros[numerosErros] != erros[0]:
                 erros.pop(0)
@@ -134,8 +143,8 @@ match escolha:
                 escolha = int(input(f"Deseja obter o valor do orçamento?\n"
                                     "1 -> Sim\n2 -> Não\n"))
                 
-                while escolha != 1 and escolha != 2:
-                    escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
+                erro_entrada(escolha)
+                
                 if escolha == 1:
                     valor_orcamento = 0.0
                     if errosList.__contains__("embreagem"):
@@ -151,12 +160,7 @@ match escolha:
                           +f"veículo fiou: {valor_orcamento: .2f}R$")
                     
                 elif escolha == 2:
-                    print(f"O usuário foi direcionado para a tela inicial")
-                
+                    print(f"O usuário foi direcionado para a tela inicial")                
                 
              else:
-                print(f"O seu veiculo está perfeito")
-                
-            
-                
-        
+                print(f"O seu veiculo está perfeito\nSessão finalizada")
