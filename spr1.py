@@ -1,22 +1,22 @@
 import time;
 import random;
+# Foi importada a biblioteca "time" para permitir execução de códigos que envolvam manipulação
+# de tempo, como fazer o usuário esperar para realizar novas tentativas de login.
+# a Biblioteca random foi importada para permitir algumas simulações de cenários reais, como por exemplo,
+# simular possíveis defeitos que poderiam ser mostrados ao usuário quando for realizada a inspeção
 
-def erro_entrada(escolha):
-     while escolha != 1 and escolha != 2:
-                    escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
-
-email_criar_conta = input("Vamos criar uma conta para você!\n Comece seu cadastro\n"
+email_criar_conta = input(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
-senha_criar_conta = input("Ok, Agora crie uma senha forte para proteger sua conta\n"
+senha_criar_conta = input(f"Ok, Agora crie uma senha forte para proteger sua conta\n"
               +"Sua senha deve conter no mínimo 8 caracteres: ")
 
 while len(senha_criar_conta) < 8 :
-    senha_criar_conta = input("\nSua senha deve contar mais de 8 caracteres: ")
+    senha_criar_conta = input(f"\nSua senha deve contar mais de 8 caracteres: ")
     
 print(f"\nO usuário foi direcionado para a tela de login\n\n"
       +f"1 -> caso tenha esquecido a senha\n" + 
-      f"Qualquer outro valor numérico -> caso queira prosseguir com o login")
+      f"Qualquer outro valor numérico -> caso queira prosseguir com o login: ")
 
 escolha = int(input(f"\nDigite sua escolha: "))
 
@@ -26,9 +26,9 @@ if escolha == 1:
     if email_criar_conta == email_recupecao:
         codigo = int(random.randrange(10000, 99999))
         # Simulando o código de verificação sendo enviado para o email do usuário
-        print(f"O código de verificação é:\n{codigo}")
+        print(f"\nO código de verificação é:\n{codigo}")
     
-        codigo_usuario = int(input(f"Informe o código de verificação: "))
+        codigo_usuario = int(input(f"\nInforme o código de verificação: "))
     
         while codigo_usuario != codigo:
             print(f"\n\nO Código informado está errado\n")
@@ -39,8 +39,7 @@ if escolha == 1:
             codigo_usuario = int(input(f"Informe o código de verifição: "))
             
         if codigo == codigo_usuario:
-            senha_criar_conta = input(f"Digite uma nova senha: ")
-        
+            senha_criar_conta = input(f"\nDigite uma nova senha: ")
     else:
         print(f"Email inválido, você foi desconectado")
         exit()
@@ -48,27 +47,25 @@ email_login = input(f"\nInforme seu email: ")
 senha_login = input(f"\nInforme sua senha: ")
 contador_tentativas = 3
 
-
-
+# Se alguma das credenciais estiver errada, o usuário terá seu acesso negado, porém
+# poderá tentar novamente. Caso insira as credenciais erradas 3 vezes seguidas, ele precisará
+# esperar 10 segundos para tentar novamente
 while senha_login != senha_criar_conta or email_criar_conta != email_login:
 
     contador_tentativas -= 1
     print(f"Email ou senha estão incorretos, por favor, preencha os campos novamente\n"
             +f"Você ainda possui {contador_tentativas} tentativas")
     
-    
     if contador_tentativas <= 0:
         print(f"Você atingiu a quantidade limite de tentativas, tente novamente após 10 segundos.")
         time.sleep(10.0)
+        contador_tentativas = 3
     
     email_login = input(f"\nInforme seu email: ")
     senha_login = input(f"\nInforme sua senha: ")
 
-    
-
 if email_criar_conta == email_login and senha_criar_conta == senha_login:
     print(f"Acesso liberado")
-    
 
 print(f"\nO usuário foi direcionado para a página inicial do projeto")
 
@@ -76,9 +73,9 @@ escolha = int(input(f"Na tela inicial, o usuário pode escolher entre:\n"
                 +f"1 - Adicionar novos veículos a plataforma\n"
                 +f"2 - Acessar informações dos veículos que ele já possui\n\n"))
 
-erro_entrada(escolha)
-    
-      
+while escolha != 1 and escolha != 2:
+    escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
+
 match escolha:
     # Funcionalidade 1 -> Adicionar veículo
     case 1:
@@ -98,14 +95,14 @@ match escolha:
                             +f"1 -> {carros_usuario[0]}\n"+
                             f"2 -> {carros_usuario[1]}\n\n"))
         
-        erro_entrada(escolha)
+        while escolha != 1 and escolha != 2:
+            escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
         
         if escolha == 1:
                 carro_escolhido = carros_usuario[0]
                
         elif escolha == 2:
                 carro_escolhido = carros_usuario[1]
-               
 
         print(f"Você selecionou o veículo {carro_escolhido}")
 
@@ -113,7 +110,8 @@ match escolha:
                             +f"1 -> Localizar veículo\n"
                             +f"2 -> Inspecionar erros do veículo\n\n"))
         
-        erro_entrada(escolha)
+        while escolha != 1 and escolha != 2:
+            escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
         # Funcionalidade 2 -> Localizar veículo
         if escolha == 1:
             if escolha_veiculo == 1:
@@ -125,25 +123,39 @@ match escolha:
         
         # Funcionalidade 3 -> Inspecionar erros do veículo
         elif escolha == 2:
+             # lista dos possíveis erros que um usuário poderia ter
              erros = ["Nenhum", "embreagem", "correia", "cambio", "motor"]
+             # variável para pegar itens (erros) aleatórios da lista de erros.
+             # foi subtraído o valor 2 da lista para evitar que seja sorteado um
+             # index inexistente na lista
              numerosErros = random.randint(0, len(erros) -2)
-             
+             # se o elemento "nenhum" entrar para o "numeroErros" de primeira, significa que
+             # um possível erro já foi identificado, então o item "nenhum" será retirado da lista
+             # e serão levados em consideração apenas os elementos restantes, que são os erros de fato
              if erros[numerosErros] != erros[0]:
+                # retirando a possibilidade de "nenhum" erro
                 erros.pop(0)
+                # lista dos erros encontrados no veículo do usuário
                 errosList = []
+                # variável que servirá para guardar o endereço dos erros que serão
+                # adicionados a "errosList" 
                 errosIndex = 0
+                # cada erro que for sorteado para "numerosErros" será adicionado a lista de erros
                 for i in (range(numerosErros)):
                     errosIndex = random.randint(0, numerosErros)
                     errosList.append(erros[errosIndex])
+                    # Para evitar a repetição um mesmo erro
                     erros.pop(errosIndex)
                     numerosErros -= 1
                 
-                print(errosList)
+                print(f"Foram encontrados problemas com os seguintes componentes"
+                      +f"de seu veículo:\n{errosList}")
                 
                 escolha = int(input(f"Deseja obter o valor do orçamento?\n"
                                     "1 -> Sim\n2 -> Não\n"))
                 
-                erro_entrada(escolha)
+                while escolha != 1 and escolha != 2:
+                    escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
                 
                 if escolha == 1:
                     valor_orcamento = 0.0
@@ -157,7 +169,7 @@ match escolha:
                         valor_orcamento += 4000.00
                         
                     print(f"\n\nO orçamento para reparo completo do seu\n"
-                          +f"veículo fiou: {valor_orcamento: .2f}R$")
+                          +f"veículo ficou: {valor_orcamento: .2f}R$")
                     
                 elif escolha == 2:
                     print(f"O usuário foi direcionado para a tela inicial")                
