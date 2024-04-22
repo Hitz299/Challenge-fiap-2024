@@ -1,10 +1,22 @@
 html {
-    font-size: 62.5%;
-  }
-  body {
-    font-size: 1.6em;
-  }
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6em;
+  margin: 0%;
+  padding: 0%;
+}
 
 .gradient {
-    background: linear-gradient(to bottom, #68EE86, #3DA3D0 );
+  background: linear-gradient(to bottom, #68ee86, #3da3d0);
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#cabecalho-azul {
+  position: relative;
+  background-color: #3da3d0;
+  align-self: center;
 }
