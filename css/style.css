@@ -1,0 +1,10 @@
+html {
+    font-size: 62.5%;
+  }
+  body {
+    font-size: 1.6em;
+  }
+
+.gradient {
+    background: linear-gradient(to bottom, #68EE86, #3DA3D0 );
+}
