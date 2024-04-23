@@ -20,3 +20,9 @@ body {
   background-color: #3da3d0;
   align-self: center;
 }
+
+#cabecalho-verde {
+  position: relative;
+  background-color: #68ee86;
+  align-self: center;
+}
