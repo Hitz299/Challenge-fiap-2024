@@ -69,10 +69,10 @@ body {
   background-image: url(../imgs/background-1280x985.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  position: fixed;
+  background-position: center;
   width: 100%;
   height: 100%;
   justify-content: center;
   text-align: center;
-  box-sizing: content-box;
+  position: fixed;
 }
