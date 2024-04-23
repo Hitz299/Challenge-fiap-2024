@@ -1,5 +1,5 @@
 html {
-  font-size: 62.5%;
+  font-size: 105%;
 }
 
 * {
@@ -23,28 +23,30 @@ html {
 }
 
 .gradient {
-  width: 70%;
-  height: 70%;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom, #68ee86, #3da3d0);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
   flex-wrap: wrap;
   align-content: center;
-
-  input {
-    margin-bottom: 4em;
-  }
-
-  button {
-    margin: auto;
-  }
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  justify-content: center;
+  text-align: center;
+  position: fixed;
 }
 
-#btnlogin {
+input {
+  margin-bottom: 4em;
+}
+
+button {
+  margin: auto;
+}
+
+.btn {
   display: flex;
   text-align: center;
 }
@@ -63,7 +65,7 @@ html {
   background-repeat: no-repeat;
 
   img {
-    margin-left: 2.5em;
+    margin-left: 2em;
   }
 }
 
@@ -87,6 +89,7 @@ input::placeholder {
 }
 
 #fundo-inicial {
+  display: flex;
   background-image: url(../imgs/background-1280x985.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -95,7 +98,10 @@ input::placeholder {
   height: 100%;
   justify-content: center;
   text-align: center;
+  align-content: center;
   position: fixed;
+  flex-wrap: wrap;
+  opacity: 0.8;
 }
 
 hr {
@@ -105,4 +111,18 @@ hr {
 .rodape_l {
   display: flex;
   flex-direction: column;
+}
+
+button {
+  display: inline-block;
+  padding: 0.6em 1.4em;
+  border-radius: 32px;
+  border-width: 0.25em;
+  font-size: 1em;
+  border-color: #3da3d0;
+
+  &:hover {
+    transition: 0.8s ease-in;
+    background-color: #68ee86;
+  }
 }
