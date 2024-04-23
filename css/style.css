@@ -49,15 +49,22 @@ html {
   text-align: center;
 }
 #cabecalho-verde {
+  display: flex;
+  height: 7rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   position: relative;
   background-color: #68ee86;
   align-self: center;
   background-image: url(../imgs/logo-portoseguro.webp);
-  background-size: contain;
+  background-size: 30%;
   background-position: center;
-  height: 60px;
   background-repeat: no-repeat;
-  padding: 1em;
+
+  img {
+    margin-left: 2.5em;
+  }
 }
 
 input::placeholder {
