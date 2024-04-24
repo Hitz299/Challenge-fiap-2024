@@ -182,14 +182,14 @@ button {
   max-width: 400px;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #3da3d0;
   border-radius: 10px;
 }
 
 .chat-box {
-  height: 300px;
+  height: 400px;
   overflow-y: scroll;
-  border: 1px solid #ccc;
+  border: 1px solid #68ee86;
   padding: 10px;
   margin-bottom: 10px;
 }
@@ -201,8 +201,8 @@ button {
 
 button {
   padding: 5px 10px;
-  background-color: #007bff;
-  color: white;
+  background-color: #3da3d0;
+  color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   cursor: pointer;
