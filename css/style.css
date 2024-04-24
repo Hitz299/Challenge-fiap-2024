@@ -42,14 +42,11 @@ input {
   margin-bottom: 4em;
 }
 
-button {
-  margin: auto;
-}
-
 .btn {
-  display: flex;
+  display: block;
   text-align: center;
 }
+
 #cabecalho-verde {
   display: flex;
   height: 6rem;
@@ -88,14 +85,13 @@ input::placeholder {
 }
 
 #cabecalho-veiculos {
-  height: 100px;
+  height: 10vh;
   position: relative;
   background-image: url(../imgs/logo-portoseguro.webp);
-  background-size: auto;
+  background-size: 25%;
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 .localizar {
   display: flex;
@@ -111,7 +107,6 @@ input::placeholder {
   position: fixed;
   flex-wrap: wrap;
   opacity: 0.9;
-  
 }
 
 #fundo-inicial {
@@ -139,30 +134,52 @@ hr {
   display: flex;
   flex-direction: column;
   gap: 3em;
-  margin-top: 20%;
-
-  &:first-child {
-    width: 850%;
-  }
+  margin-top: 3%;
 
   #servico1 {
+    padding: 1.75vh;
+    display: flex;
+    padding-left: 10vw;
+    justify-content: start;
     background-color: #3da3d0;
-    height: 4rem;
+    height: 8vh;
+    width: 80vw;
+    color: #ffffff;
+    font-size: 160%;
   }
   #servico2 {
+    padding: 1.25vh;
+    display: flex;
+    padding-left: 10vw;
+    justify-content: start;
     background-color: #d03d3d;
-    height: 4rem;
+    height: 8vh;
+    width: 80vw;
+    color: #ffffff;
+    font-size: 160%;
   }
   #servico3 {
+    padding: 1.75vh;
+    display: flex;
+    padding-left: 10vw;
+    justify-content: start;
     background-color: #5fd03d;
-    height: 4rem;
+    height: 8vh;
+    width: 80vw;
+    color: #ffffff;
+    font-size: 160%;
   }
 }
-
+#btn-container {
+  display: block;
+  margin-top: 20vh;
+  width: 100vw;
+  text-align: center;
+}
 .icone-servico {
   background-color: #ffffff;
   border-radius: 32px;
-  width: 3.5%;
+  width: 55%;
 }
 
 button {
@@ -200,10 +217,12 @@ button {
 }
 
 button {
+  display: block;
   padding: 5px 10px;
   background-color: #3da3d0;
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  margin: auto;
 }
