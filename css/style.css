@@ -52,7 +52,7 @@ button {
 }
 #cabecalho-verde {
   display: flex;
-  height: 7rem;
+  height: 6rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -66,6 +66,14 @@ button {
 
   img {
     margin-left: 2em;
+    background-color: #ffffff;
+    padding: 0.2em;
+    border-radius: 32px;
+
+    &:hover {
+      transition: 0.8s ease-in;
+      background-color: #3da3d0;
+    }
   }
 }
 
@@ -114,11 +122,7 @@ input::placeholder {
   background-position: center;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  text-align: center;
-  align-content: center;
   position: fixed;
-  flex-wrap: wrap;
   opacity: 0.8;
 }
 
@@ -131,8 +135,31 @@ hr {
   flex-direction: column;
 }
 
+#servicos-contaiter {
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  margin-top: 20%;
+
+  &:first-child {
+    width: 850%;
+  }
+
+  #servico1 {
+    background-color: #3da3d0;
+    height: 4rem;
+  }
+  #servico2 {
+    background-color: #d03d3d;
+    height: 4rem;
+  }
+  #servico3 {
+    background-color: #5fd03d;
+    height: 4rem;
+  }
+}
+
 button {
-  display: inline-block;
   padding: 0.6em 1.4em;
   border-radius: 32px;
   border-width: 0.25em;
