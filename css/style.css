@@ -159,6 +159,12 @@ hr {
   }
 }
 
+.icone-servico {
+  background-color: #ffffff;
+  border-radius: 32px;
+  width: 3.5%;
+}
+
 button {
   padding: 0.6em 1.4em;
   border-radius: 32px;
