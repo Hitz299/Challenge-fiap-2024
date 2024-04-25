@@ -174,24 +174,21 @@ hr {
 }
 
 #img-gabriel {
-  border-radius: 320px;
-  height: 28vh;
-  width: 16vw;
+  border-radius: 100px;
+  width: 50%;
   position: relative;
   margin-bottom: 5vh;
 }
 
 #img-gustavo {
   border-radius: 320px;
-  height: 28vh;
-  width: 14vw;
+  width: 60%;
   position: relative;
 }
 
 #img-nathan {
   border-radius: 320px;
-  height: 28vh;
-  width: 20vw;
+  width: 90%;
   position: relative;
 }
 
@@ -210,6 +207,9 @@ hr {
   flex-direction: column;
   gap: 3em;
   margin-top: 3%;
+  img {
+    width: 130%;
+  }
 
   #servico1 {
     padding: 1.75vh;
@@ -220,29 +220,41 @@ hr {
     height: 8vh;
     width: 80vw;
     color: #ffffff;
-    font-size: 160%;
+    font-size: 300%;
+    align-items: center;
+    img {
+      width: 140%;
+    }
   }
   #servico2 {
     padding: 1.25vh;
     display: flex;
     padding-left: 10vw;
     justify-content: start;
-    background-color: #d03d3d;
+    align-items: center;
+    background-color: #68ee86;
     height: 8vh;
     width: 80vw;
     color: #ffffff;
-    font-size: 160%;
+    font-size: 300%;
+    img {
+      width: 110%;
+    }
   }
   #servico3 {
     padding: 1.75vh;
     display: flex;
     padding-left: 10vw;
     justify-content: start;
-    background-color: #5fd03d;
+    background-color: #3da3d0;
     height: 8vh;
     width: 80vw;
     color: #ffffff;
-    font-size: 160%;
+    font-size: 300%;
+    align-items: center;
+    img {
+      width: 130%;
+    }
   }
 }
 #btn-container {
