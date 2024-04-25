@@ -82,6 +82,13 @@ html {
   }
 }
 
+#conta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20vh 20vh 20vh;
+  justify-items: center;
+}
+
 input::placeholder {
   font-size: 1.5vw;
   text-align: center;
