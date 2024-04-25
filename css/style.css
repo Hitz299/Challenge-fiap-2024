@@ -35,7 +35,7 @@ html {
   background-position: center;
   justify-content: center;
   text-align: center;
-  position: fixed;
+  position: fixed;   
 }
 
 input {
@@ -226,3 +226,5 @@ button {
   cursor: pointer;
   margin: auto;
 }
+
+
