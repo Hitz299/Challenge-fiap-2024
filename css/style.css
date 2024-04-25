@@ -115,18 +115,21 @@ input::placeholder {
 
 .localizar {
   display: flex;
+  flex-direction: row;
   background-image: url(../imgs/teste_maps.png);
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center;
   width: 100%;
   height: 100%;
-  justify-content: center;
-  text-align: center;
-  align-content: center;
+  align-content: end;
   position: fixed;
   flex-wrap: wrap;
   opacity: 0.9;
+
+  button {
+    margin-bottom: 20vh;
+  }
 }
 
 #fundo-inicial {
@@ -300,7 +303,8 @@ input {
   width: 20vw;
   height: 2.4vw;
   border: none;
-  padding-top: 4%;
+  padding: 1.2em 2em;
+
   border-radius: 32px;
   background-color: #cececea1;
 }
