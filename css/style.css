@@ -141,10 +141,29 @@ input::placeholder {
   opacity: 0.8;
 }
 
+.integrates-topo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  img {
+    width: 50%;
+    height: 2em;
+    margin-top: 9vh;
+    margin-right: 45svw;
+  }
+}
+
 hr {
   margin-bottom: 2em;
   width: 40vw;
   opacity: 0.6;
+}
+
+.integrantes-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 10vh 5vh 5vh 5vh;
 }
 
 .rodape_l {
@@ -236,7 +255,7 @@ input {
 #user-input {
   flex: 1;
   width: calc(100% - 90px);
-  padding: 0;
+  padding: 20px;
 }
 
 .message {
@@ -254,7 +273,7 @@ button {
   border-style: solid;
   cursor: pointer;
   margin: auto;
-  font-size: 0,6em;
+  font-size: 0, 6em;
 
   &:hover {
     transition: 0.8s ease-in;
@@ -266,8 +285,6 @@ button {
   margin-bottom: 0.8vh;
 }
 
-.btn-chatbot{
+.rodape-chatbot {
   display: flex;
-  text-align: center;
-  margin-top: 10vh;
 }
