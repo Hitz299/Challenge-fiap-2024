@@ -95,7 +95,7 @@ html {
 }
 
 input::placeholder {
-  font-size: 1.5vw;
+  font-size: 1.1vw;
   text-align: center;
   color: #3da3d0;
 }
@@ -303,8 +303,10 @@ input {
   width: 20vw;
   height: 2.4vw;
   border: none;
-  padding: 1.2em 2em;
-
+  text-align: center;
+  justify-content: center;
+  padding: 0.6em 1.4em;
+  font-size: 1.6vh;
   border-radius: 32px;
   background-color: #cececea1;
 }
