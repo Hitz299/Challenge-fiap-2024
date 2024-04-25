@@ -65,7 +65,7 @@ html {
   background-color: #68ee86;
   align-self: center;
   background-image: url(../imgs/logo-portoseguro.webp);
-  background-size: 30%;
+  background-size: 24rem;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -147,7 +147,7 @@ input::placeholder {
 
   h1 {
     margin-top: 8vh;
-    font-size: 300%;
+    font-size: 3rem;
   }
 
   img {
@@ -168,32 +168,32 @@ hr {
   margin-top: 6vh;
   font-size: 140%;
   display: grid;
-  grid-template-columns: 30vw 30vw 30vw;
-  grid-template-rows: 3fr 1fr 1fr 3vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 24vh 10vh 10vh 10vh;
   justify-items: center;
 }
 
 #img-gabriel {
   border-radius: 100px;
-  width: 50%;
+  width: 6em;
   position: relative;
   margin-bottom: 5vh;
 }
 
 #img-gustavo {
   border-radius: 320px;
-  width: 60%;
+  width: 8em;
   position: relative;
 }
 
 #img-nathan {
   border-radius: 320px;
-  width: 90%;
+  width: 12em;
   position: relative;
 }
 
 #rodape-integrantes {
-  margin-top: 8vh;
+  margin-top: 4vh;
   font-size: 200%;
 }
 
@@ -212,48 +212,66 @@ hr {
   }
 
   #servico1 {
+    width: 100%;
     padding: 1.75vh;
     display: flex;
-    padding-left: 10vw;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 10rem;
     background-color: #3da3d0;
-    height: 8vh;
+    height: 10vh;
     width: 80vw;
     color: #ffffff;
     font-size: 300%;
     align-items: center;
     img {
-      width: 140%;
+      width: 4rem;
+      &:hover {
+        transition: 1.1s ease-in;
+        background-color: #68ee86;
+      }
     }
   }
   #servico2 {
     padding: 1.25vh;
     display: flex;
-    padding-left: 10vw;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 10rem;
     align-items: center;
     background-color: #68ee86;
-    height: 8vh;
+    height: 10vh;
     width: 80vw;
     color: #ffffff;
     font-size: 300%;
     img {
-      width: 110%;
+      width: 4rem;
+
+      &:hover {
+        transition: 1.1s ease-in;
+        background-color: #3da3d0;
+      }
     }
   }
   #servico3 {
     padding: 1.75vh;
     display: flex;
-    padding-left: 10vw;
-    justify-content: start;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 10rem;
     background-color: #3da3d0;
-    height: 8vh;
+    height: 10vh;
     width: 80vw;
     color: #ffffff;
     font-size: 300%;
     align-items: center;
     img {
-      width: 130%;
+      width: 4rem;
+
+      &:hover {
+        transition: 1.1s ease-in;
+        background-color: #68ee86;
+      }
     }
   }
 }
@@ -310,7 +328,7 @@ input {
 
 button {
   display: flex;
-  padding: 2em 8em;
+  padding: 0.8em 1.6em;
   background-color: #3da3d0;
   color: rgb(255, 255, 255);
   border-radius: 2em;
@@ -318,7 +336,7 @@ button {
   border-style: solid;
   cursor: pointer;
   margin: auto;
-  font-size: 0.8em;
+  font-size: 1.6em;
 
   &:hover {
     transition: 0.8s ease-in;
