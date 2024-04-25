@@ -89,6 +89,11 @@ html {
   justify-items: center;
 }
 
+#btn-conta {
+  display: flex;
+  flex-direction: row;
+}
+
 input::placeholder {
   font-size: 1.5vw;
   text-align: center;
