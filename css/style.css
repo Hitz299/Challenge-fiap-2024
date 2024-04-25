@@ -205,8 +205,9 @@ hr {
 }
 
 .chat-container {
-  display: block;
-  max-width: 600px;
+  
+  height: 40vw;
+  width: 40vw;
   margin: 150px auto;
   padding: 15px;
   border: 3px solid #3da3d0;
@@ -222,24 +223,25 @@ input {
 }
 
 .chat-box {
+  position: static;
   display: flex;
-  height: 400px;
-  width: 350px;
-  overflow-y: scroll;
+  height: 20vw;
+  width: 30vw;
   border: 3px solid #68ee86;
   padding: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 57px;
   color: #ffffff;
 }
 
 #user-input {
   flex: 1;
   width: calc(100% - 90px);
-  padding:20px;
+  padding: 0;
 }
 
 .message {
   margin-bottom: 10px;
+  
 }
 
 button {
@@ -264,6 +266,8 @@ button {
   margin-bottom: 0.8vh;
 }
 
-.rodape-chatbot{
+.btn-chatbot{
   display: flex;
+  text-align: center;
+  margin-top: 10vh;
 }
