@@ -205,11 +205,12 @@ hr {
 }
 
 .chat-container {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px solid #3da3d0;
-  border-radius: 10px;
+  display: block;
+  max-width: 600px;
+  margin: 150px auto;
+  padding: 15px;
+  border: 3px solid #3da3d0;
+  border-radius: 5px;
 }
 
 input {
@@ -221,7 +222,9 @@ input {
 }
 
 .chat-box {
+  display: flex;
   height: 400px;
+  width: 350px;
   overflow-y: scroll;
   border: 3px solid #68ee86;
   padding: 10px;
@@ -230,21 +233,26 @@ input {
 }
 
 #user-input {
-  width: calc(100% - 70px);
-  padding: 10px;
+  flex: 1;
+  width: calc(100% - 90px);
+  padding:20px;
+}
+
+.message {
+  margin-bottom: 10px;
 }
 
 button {
-  display: block;
-  padding: 0.7em 3em;
+  display: flex;
+  padding: 0.5em 1em;
   background-color: #3da3d0;
   color: rgb(255, 255, 255);
   border-radius: 2em;
-  border-color: #ececec;
+  border-color: #fdfdfdec;
   border-style: solid;
   cursor: pointer;
   margin: auto;
-  font-size: 1em;
+  font-size: 0,6em;
 
   &:hover {
     transition: 0.8s ease-in;
@@ -254,4 +262,8 @@ button {
 
 .texto-cadastro {
   margin-bottom: 0.8vh;
+}
+
+.rodape-chatbot{
+  display: flex;
 }

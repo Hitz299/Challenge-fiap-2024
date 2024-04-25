@@ -1,20 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chatbot</title>
-    <link rel="stylesheet" href="../css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header id="cabecalho-verde"></header>
     <div class="gradient">
-    <div class="chat-container">
-        <div class="chat-box" id="chat-box">            
-        </div>
-        <input type="text" id="user-input" placeholder="Digite sua mensagem">
+      <h1>Porto Boy</h1>
+      <div class="chat-container">
+        <div class="chat-box" id="chat-box"></div>
+        <input type="text" id="user-input" placeholder="Digite sua mensagem" />
         <button onclick="sendMessage()">Enviar</button>
+      </div>
+      <script src="script.js"></script>
+      <footer id="rodape-chatbot">
+        <nav>
+          <div>
+            <a href="./tela-inicial.html">Página principal</a>
+          </div>
+        </nav>
+      </footer>
     </div>
-    <script src="script.js"></script>
-    </div>
-</body>
+  </body>
 </html>
