@@ -333,7 +333,7 @@ button {
   border-style: solid;
   cursor: pointer;
   margin: auto;
-  font-size: 1.6em;
+  font-size: 1em;
 
   &:hover {
     transition: 0.8s ease-in;
