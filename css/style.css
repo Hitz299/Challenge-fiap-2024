@@ -357,3 +357,12 @@ button {
 .rodape-chatbot {
   display: flex;
 }
+
+#cabecalho-add-veiculo {
+  height: 16vh;
+  background-image: url(../imgs/veiculos.jpeg);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
