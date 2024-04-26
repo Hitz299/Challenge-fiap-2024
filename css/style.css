@@ -357,3 +357,10 @@ button {
 .rodape-chatbot {
   display: flex;
 }
+
+#termos {
+  float: left;
+  text-align: left;
+}
+
+
