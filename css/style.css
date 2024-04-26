@@ -1,5 +1,5 @@
 html {
-  font-size: 105%;
+  font-size: 165%;
 }
 
 * {
@@ -282,12 +282,22 @@ hr {
 }
 
 .chat-container {
-  height: 40vw;
-  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 54vh;
+  width: 60vw;
   margin: 150px auto;
   padding: 15px;
   border: 3px solid #3da3d0;
   border-radius: 5px;
+
+  font-size: 1vw;
+
+  button {
+    margin-top: 2%;
+    justify-content: center;
+  }
 }
 
 input {
@@ -305,18 +315,24 @@ input {
 .chat-box {
   position: static;
   display: flex;
-  height: 20vw;
-  width: 30vw;
+  height: 30vh;
+  width: 50vw;
   border: 3px solid #68ee86;
-  padding: 10px;
+  padding: 0.1em;
   margin-bottom: 57px;
   color: #ffffff;
 }
 
 #user-input {
-  flex: 1;
-  width: calc(100% - 90px);
   padding: 20px;
+  font-size: 1.1em;
+  height: 6vh;
+  width: 14vw;
+
+  &:focus {
+    transition: 1.4s;
+    width: 36vw;
+  }
 }
 
 .message {
@@ -325,7 +341,7 @@ input {
 
 button {
   display: flex;
-  padding: 0.8em 1.6em;
+  padding: 1em 1.4em;
   background-color: #3da3d0;
   color: rgb(255, 255, 255);
   border-radius: 2em;
@@ -333,7 +349,8 @@ button {
   border-style: solid;
   cursor: pointer;
   margin: auto;
-  font-size: 1em;
+  font-size: 1.2em;
+  width: 12vw;
 
   &:hover {
     transition: 0.8s ease-in;
@@ -454,10 +471,13 @@ button {
   text-align: center;
   width: 100%;
   height: 100%;
-  background-image: url(../imgs/bg-servicos.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-color: #ffffff;
   position: fixed;
+
+  footer {
+    margin-top: 14vh;
+    font-size: 140%;
+  }
 }
 
 .input-add {
@@ -469,14 +489,25 @@ button {
   height: 35vh;
   justify-content: space-between;
   margin-inline: 10vw;
-}
 
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    color: #ffffff;
+    font-size: 160%;
+    text-align: start;
+    margin-left: 1vw;
+  }
+}
 #checkbox {
   display: flex;
   flex-direction: row;
   text-align: center;
   justify-items: center;
-  margin-inline: 24vw;
+  margin-inline: 30vw;
 
   P {
     margin-top: 1.25vh;
