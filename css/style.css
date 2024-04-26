@@ -104,15 +104,6 @@ input::placeholder {
   margin-bottom: 30%;
 }
 
-#cabecalho-veiculos {
-  height: 10vh;
-  position: relative;
-  background-image: url(../imgs/logo-portoseguro.webp);
-  background-size: 25%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .localizar {
   display: flex;
   flex-direction: row;
@@ -431,3 +422,13 @@ button {
   width: 20vw;
   height: 5vh;
 }
+
+#cabecalho-adicionar-veiculos {
+  height: 16vh;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.9;
+  background-image: url(../imgs/banner_veiculos.jpg);
+  }
