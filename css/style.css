@@ -104,15 +104,6 @@ input::placeholder {
   margin-bottom: 30%;
 }
 
-#cabecalho-veiculos {
-  height: 10vh;
-  position: relative;
-  background-image: url(../imgs/logo-portoseguro.webp);
-  background-size: 25%;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .localizar {
   display: flex;
   flex-direction: row;
@@ -356,6 +347,11 @@ button {
 
 .rodape-chatbot {
   display: flex;
+}
+
+#termos {
+  float: left;
+  text-align: left;
 }
 
 #cabecalho-meu-veiculo {
