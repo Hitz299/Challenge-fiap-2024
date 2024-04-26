@@ -330,7 +330,7 @@ input {
   width: 14vw;
 
   &:focus {
-    transition: 1.4s;
+    transition: 1s;
     width: 36vw;
   }
 }
@@ -349,8 +349,9 @@ button {
   border-style: solid;
   cursor: pointer;
   margin: auto;
-  font-size: 1.2em;
+  font-size: 1.4vw;
   width: 12vw;
+  justify-content: center;
 
   &:hover {
     transition: 0.8s ease-in;
@@ -521,4 +522,8 @@ button {
     margin-left: 15vw;
     margin-bottom: 10vh;
   }
+}
+
+.link-btn {
+  text-decoration: none;
 }
