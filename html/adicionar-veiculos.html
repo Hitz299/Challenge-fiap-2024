@@ -1,49 +1,57 @@
 <!DOCTYPE html>
-<html lang="pt-br"></html>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ADICIONAR VEÍCULOS</title>
-  <link rel="stylesheet" href="../css/style.css" />
-</head>
-<body>
-  <header id="cabecalho-adicionar-veiculos"></header>
-  <main>
-   <div class="fundo-vcl"> 
-    <h3>
-      Precisaremos de alguns dados sobre seu veículo para que <br />
-      possamos ter acesso às suas informações
-    </h3>
-    <div>
-      <form>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADICIONAR VEÍCULOS</title>
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <header id="cabecalho-verde"></header>
+
+    <div id="tela-add">
+      <h3>
+        Precisaremos de alguns dados sobre seu veículo para que <br />
+        possamos ter acesso às suas informações
+      </h3>
+      <main>
         <div>
-          <label for="chassi">Chassi</label>
-          <input
-            id="chassi"
-            type="text"
-            placeholder="Digite o chassi do veiculo"
-          />
+          <form>
+            <div class="input-add">
+              <div>
+                <label for="chassi">Chassi</label>
+                <input
+                  id="chassi"
+                  type="text"
+                  placeholder="Digite o chassi do veiculo"
+                />
+              </div>
+              <div>
+                <label for="placa">Placa</label>
+                <input
+                  id="placa"
+                  type="text"
+                  placeholder="Informe a placa do veículo"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="termos"
+                >Li e estou de acordo com os Termos de Uso e Política de
+                Privacidade</label
+              >
+              <input id="termos" type="checkbox" />
+            </div>
+          </form>
         </div>
+      </main>
+
+      <footer>
         <div>
-          <label for="placa">Placa</label>
-          <input
-            id="placa"
-            type="text"
-            placeholder="Informe a placa do veículo"
-          />
+          <button type="button">Procurar</button>
         </div>
-        <div>
-          <label for="termos">Li e estou de acordo com os Termos de Uso e Política de Privacidade</label>
-          <input id="termos" type="checkbox" >
-        </div>
-      </form>
+        <nav><a href="./tela-inicial.html">Página inicial</a></nav>
+      </footer>
     </div>
-  </main>
-  </div>
-  <footer>
-    <div>
-      <button type="button">Procurar</button>
-    </div>
-    <nav><a href="./tela-inicial.html">Página inicial</a></nav>
-  </footer>
-</body>
+  </body>
+</html>

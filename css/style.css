@@ -169,7 +169,7 @@ hr {
 
 #img-gabriel {
   border-radius: 100px;
-  width: 6vw;
+  width: 6.2em;
   position: relative;
   margin-bottom: 5vh;
 }
@@ -360,7 +360,6 @@ button {
   font-size: 1.6em;
   height: 10vh;
   background-color: #3da3d0;
-  
 }
 
 #titulo-veiculo {
@@ -371,7 +370,6 @@ button {
 #rodape-veiculos {
   text-align: center;
   font-size: 120%;
-  
 }
 
 #veiculos-container {
@@ -388,7 +386,7 @@ button {
 .veiculo {
   display: flex;
   flex-direction: column;
-  gap: 4vh;     
+  gap: 4vh;
   justify-items: center;
   align-items: center;
   justify-content: center;
@@ -408,7 +406,7 @@ button {
   gap: 1.2em;
   justify-content: center;
   align-items: center;
-    .item-veiculo{
+  .item-veiculo {
     background-color: #3da3d0;
     text-align: center;
     align-content: center;
@@ -420,7 +418,7 @@ button {
   }
 }
 
-.texto{
+.texto {
   font-size: 30px;
 }
 
@@ -447,4 +445,22 @@ button {
   background-color: #d4d4d4;
   height: 120vh;
   width: 100%;
+}
+
+#tela-add {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4vh;
+  text-align: center;
+}
+
+.input-add {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+  justify-content: space-between;
+  margin-inline: 10vw;
 }
