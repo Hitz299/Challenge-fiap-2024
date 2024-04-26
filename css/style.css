@@ -178,7 +178,7 @@ hr {
 
 #img-gabriel {
   border-radius: 100px;
-  width: 6em;
+  width: 6vw;
   position: relative;
   margin-bottom: 5vh;
 }
@@ -358,11 +358,76 @@ button {
   display: flex;
 }
 
-#cabecalho-add-veiculo {
+#cabecalho-meu-veiculo {
   height: 16vh;
+  background-color: #3da3d0;
   background-image: url(../imgs/veiculos.jpeg);
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
   background-size: cover;
+  opacity: 0.8;
+}
+
+#titulo-veiculo {
+  text-align: center;
+  margin-top: 2vh;
+}
+
+#corpo-veiculos {
+  height: 150vh;
+}
+
+#veiculos-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30vh 30vh;
+  justify-items: center;
+  align-items: center;
+  column-gap: 1vw;
+  row-gap: 1vw;
+}
+
+.veiculo {
+  display: flex;
+  flex-direction: column;
+  gap: 8vh;
+  justify-items: center;
+  align-items: center;
+}
+
+.info-veiculo {
+  display: grid;
+  grid-template-columns: 20vh 20vh 20vh;
+  justify-items: center;
+  align-items: center;
+
+  div {
+    background-color: #3da3d0;
+    text-align: center;
+    align-content: center;
+
+    background-color: #3da3d0;
+    border-radius: 32px;
+    width: 8vw;
+    height: 4vh;
+  }
+}
+
+#btn-meu-veiculo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
+}
+
+.nome-veiculo {
+  display: block;
+  text-align: center;
+  align-content: center;
+  font-size: 160%;
+  font-weight: bold;
+  background-color: #3da3d0;
+  border-radius: 32px;
+  width: 20vw;
+  height: 5vh;
 }
