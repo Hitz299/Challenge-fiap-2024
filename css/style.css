@@ -372,46 +372,53 @@ button {
 }
 
 #veiculos-container {
+  margin-top: 6vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 30vh 30vh;
   justify-items: center;
   align-items: center;
   column-gap: 1vw;
-  row-gap: 1vw;
+  row-gap: 5vw;
 }
 
 .veiculo {
   display: flex;
   flex-direction: column;
-  gap: 8vh;
+  gap: 8vh;     
   justify-items: center;
   align-items: center;
   justify-content: center;
   background-color: #68ee86;
   border-radius: 20px;
   width: 30vw;
-  height: 24vh;
+  height: 28vh;
   border: 0.25vw solid #3da3d0;
   border-style: ridge;
 }
 
 .info-veiculo {
   position: relative;
-  display: grid;
-  grid-template-columns: 20vh 20vh 20vh;
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
   align-items: center;
-  div {
+    .item-veiculo{
     background-color: #3da3d0;
     text-align: center;
     align-content: center;
-
-    background-color: #3da3d0;
+    justify-content: center;
     border-radius: 32px;
-    width: 8vw;
+    width: 12vw;
     height: 4vh;
+    font-size: 2vw;
   }
+}
+
+.texto{
+  font-size: 30px;
 }
 
 #btn-meu-veiculo {
