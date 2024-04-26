@@ -355,8 +355,12 @@ button {
 }
 
 #cabecalho-meu-veiculo {
-  height: 12vh;
+  display: block;
+  text-align: center;
+  font-size: 1.6em;
+  height: 10vh;
   background-color: #3da3d0;
+  
 }
 
 #titulo-veiculo {
@@ -366,9 +370,8 @@ button {
 
 #rodape-veiculos {
   text-align: center;
-  margin-top: 6vh;
   font-size: 120%;
-  align-items: start;
+  
 }
 
 #veiculos-container {
@@ -385,13 +388,13 @@ button {
 .veiculo {
   display: flex;
   flex-direction: column;
-  gap: 8vh;     
+  gap: 4vh;     
   justify-items: center;
   align-items: center;
   justify-content: center;
   background-color: #68ee86;
   border-radius: 20px;
-  width: 30vw;
+  width: 40vw;
   height: 28vh;
   border: 0.25vw solid #3da3d0;
   border-style: ridge;
@@ -402,7 +405,7 @@ button {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 2em;
+  gap: 1.2em;
   justify-content: center;
   align-items: center;
     .item-veiculo{
@@ -412,7 +415,7 @@ button {
     justify-content: center;
     border-radius: 32px;
     width: 12vw;
-    height: 4vh;
+    height: 6vh;
     font-size: 2vw;
   }
 }
@@ -442,7 +445,6 @@ button {
 
 #meus-veiculos-container {
   background-color: #d4d4d4;
-  height: 112vh;
-
+  height: 120vh;
   width: 100%;
 }
