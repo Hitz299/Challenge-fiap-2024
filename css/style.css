@@ -1,6 +1,7 @@
 html {
   font-size: 165%;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 * {
@@ -93,6 +94,21 @@ html {
 #btn-conta {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  margin-right: 24vw;
+}
+
+#conta-container {
+  margin-top: 6vh;
+  h2 {
+    text-align: center;
+    margin-bottom: 5vh;
+  }
+}
+
+footer {
+  text-align: center;
+  margin-top: 3vw;
 }
 
 input::placeholder {
