@@ -10,14 +10,6 @@ html {
   box-sizing: border-box;
 }
 
-#cabecalho-azul {
-  display: flex;
-  background-color: #3da3d0;
-  padding: 2em;
-  position: relative;
-  justify-content: center;
-}
-
 #cabecalho-azul h1 {
   position: absolute;
   align-self: center;

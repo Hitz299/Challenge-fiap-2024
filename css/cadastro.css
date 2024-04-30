@@ -1,0 +1,7 @@
+#cabecalho-azul {
+  display: flex;
+  background-color: #3da3d0;
+  padding: 2em;
+  position: relative;
+  justify-content: center;
+}
