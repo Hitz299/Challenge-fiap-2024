@@ -1,0 +1,14 @@
+#cabecalho-verde {
+  display: flex;
+  height: 6rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #68ee86;
+  align-self: center;
+  background-image: url(../imgs/logo-portoseguro.webp);
+  background-size: 24rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
