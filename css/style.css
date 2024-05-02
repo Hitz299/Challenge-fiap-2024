@@ -68,7 +68,7 @@ footer {
 }
 
 input::placeholder {
-  font-size: 1.18em;
+  font-size: 0.9em;
   text-align: center;
   justify-items: center;
   align-items: center;
@@ -122,26 +122,26 @@ hr {
   font-size: 140%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 24vh 10vh 10vh 10vh;
+  grid-template-rows: 30vh 6vh 6vh 6vh;
   justify-items: center;
 }
 
 #img-gabriel {
   border-radius: 100px;
-  width: 6.2em;
+  width: 30%;
   position: relative;
   margin-bottom: 5vh;
 }
 
 #img-gustavo {
   border-radius: 320px;
-  width: 8em;
+  width: 40%;
   position: relative;
 }
 
 #img-nathan {
   border-radius: 320px;
-  width: 12em;
+  width: 56%;
   position: relative;
 }
 
@@ -177,6 +177,7 @@ input {
   font-size: 1.6em;
   border-radius: 32px;
   background-color: #cececea1;
+  margin-top: 1vh;
 }
 
 #user-input {
