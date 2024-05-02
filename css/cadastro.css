@@ -28,3 +28,9 @@
     margin-top: 10vh;
   }
 }
+
+#cabecalho-azul h1 {
+  position: absolute;
+  align-self: center;
+  color: #ffffff;
+}
