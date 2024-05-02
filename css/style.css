@@ -47,13 +47,6 @@ html {
   }
 }
 
-#conta {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20vh 20vh 20vh;
-  justify-items: center;
-}
-
 #btn-conta {
   display: flex;
   flex-direction: row;

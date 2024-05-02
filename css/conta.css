@@ -12,3 +12,15 @@
   background-position: center;
   background-repeat: no-repeat;
 }
+
+#conta {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 20vh 20vh;
+  justify-items: center;
+  grid-auto-flow: column;
+  gap: 4vh;
+  align-items: center;
+  text-align: center;
+  height: 52vh;
+}
