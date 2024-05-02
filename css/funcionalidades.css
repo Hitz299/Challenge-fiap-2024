@@ -110,3 +110,94 @@
     margin-left: 1vw;
   }
 }
+
+#meus-veiculos-container {
+  background-color: #d4d4d4;
+  padding-top: 3vh;
+  height: 120vh;
+  width: 100%;
+}
+
+#titulo-veiculo {
+  text-align: center;
+  padding-top: 3vh;
+}
+
+#veiculos-container {
+  margin-top: 6vh;
+  display: grid;
+  height: 62vh;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 30vh 30vh;
+  justify-items: center;
+  align-items: center;
+  column-gap: 1vw;
+  row-gap: 5vw;
+}
+
+.veiculo {
+  display: flex;
+  flex-direction: column;
+  gap: 4vh;
+  justify-items: center;
+  align-items: center;
+  justify-content: center;
+  background-color: #68ee86;
+  border-radius: 20px;
+  width: 40vw;
+  height: 28vh;
+  border: 0.25vw solid #3da3d0;
+  border-style: ridge;
+}
+
+.nome-veiculo {
+  display: block;
+  text-align: center;
+  align-content: center;
+  font-size: 160%;
+  font-weight: bold;
+  background-color: #3da3d0;
+  border-radius: 32px;
+  width: 20vw;
+  height: 6vh;
+}
+
+.info-veiculo {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.2em;
+  justify-content: center;
+  align-items: center;
+  .item-veiculo {
+    background-color: #3da3d0;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    border-radius: 32px;
+    width: 12vw;
+    height: 6vh;
+    font-size: 2vw;
+  }
+}
+
+#rodape-veiculos {
+  text-align: center;
+  font-size: 120%;
+}
+
+#cabecalho-azul {
+  display: block;
+  align-content: center;
+  font-size: 140%;
+  text-align: center;
+  background-color: #3da3d0;
+  height: 8vh;
+  position: relative;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+}
