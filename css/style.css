@@ -75,8 +75,10 @@ footer {
 }
 
 input::placeholder {
-  font-size: 1.1vw;
+  font-size: 1.8vw;
   text-align: center;
+  justify-items: center;
+  align-items: center;
   color: #3da3d0;
 }
 
@@ -177,13 +179,13 @@ hr {
 }
 
 input {
-  width: 20vw;
-  height: 2.4vw;
+  width: 24vw;
+  height: 6.8vh;
   border: none;
   text-align: center;
-  justify-content: center;
-  padding: 0.6em 1.4em;
-  font-size: 1.6vh;
+  justify-items: center;
+  padding: 0.6em 1.2em;
+  font-size: 1.6em;
   border-radius: 32px;
   background-color: #cececea1;
 }
@@ -366,26 +368,6 @@ button {
     font-size: 160%;
     text-align: start;
     margin-left: 1vw;
-  }
-}
-#checkbox {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  justify-items: center;
-  margin-inline: 30vw;
-
-  P {
-    margin-top: 1.25vh;
-  }
-
-  #termos {
-    border-radius: 32px;
-    display: block;
-    height: 5vh;
-    width: 5vw;
-    margin-left: 15vw;
-    margin-bottom: 10vh;
   }
 }
 

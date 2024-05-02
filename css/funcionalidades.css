@@ -50,3 +50,24 @@
   margin-bottom: 5vh;
   color: #ffffff;
 }
+
+#checkbox {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  justify-items: center;
+  margin-inline: 30vw;
+
+  P {
+    margin-top: 1.25vh;
+  }
+
+  #termos {
+    border-radius: 32px;
+    display: block;
+    height: 5vh;
+    width: 5vw;
+    margin-left: 15vw;
+    margin-bottom: 10vh;
+  }
+}
