@@ -71,3 +71,42 @@
     margin-bottom: 10vh;
   }
 }
+
+#tela-add {
+  display: flex;
+  flex-direction: column;
+  padding-top: 6vh;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+  position: fixed;
+
+  footer {
+    margin-top: 8vh;
+    font-size: 140%;
+  }
+}
+
+.input-add {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  justify-content: space-between;
+  margin-inline: 10vw;
+
+  div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    color: #ffffff;
+    font-size: 160%;
+    text-align: start;
+    margin-left: 1vw;
+  }
+}
