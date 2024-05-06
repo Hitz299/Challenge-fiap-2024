@@ -20,7 +20,7 @@ html {
   margin-bottom: 8vh;
 }
 
-#cabecalho-verde {
+.cabecalho-verde {
   display: flex;
   height: 6rem;
   flex-direction: row;
@@ -207,8 +207,9 @@ button {
   cursor: pointer;
   margin: auto;
   font-size: 1.4vw;
-  width: 12vw;
+  width: 16vw;
   justify-content: center;
+  align-items: center;
 
   &:hover {
     transition: 0.8s ease-in;

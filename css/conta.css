@@ -1,4 +1,4 @@
-#cabecalho-verde {
+.cabecalho-verde {
   display: flex;
   height: 6rem;
   flex-direction: row;
