@@ -80,7 +80,7 @@
   text-align: center;
   width: 100vw;
   background-color: #ffffff;
-  
+
   footer {
     margin-top: 8vh;
     font-size: 140%;
@@ -186,6 +186,32 @@
   font-size: 120%;
 }
 
+#btn-meu-veiculo {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15vh;
+  flex-wrap: wrap;
+}
+
+.localizar {
+  display: flex;
+  flex-direction: row;
+  background-image: url(../imgs/teste_maps.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  align-content: end;
+  position: fixed;
+  flex-wrap: wrap;
+  opacity: 0.9;
+
+  button {
+    margin-bottom: 20vh;
+  }
+}
+
 .cabecalho-azul {
   display: block;
   align-content: center;
@@ -196,6 +222,22 @@
   position: relative;
   justify-content: center;
 }
+
+.cabecalho-verde {
+  display: flex;
+  height: 6rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-color: #68ee86;
+  align-self: center;
+  background-image: url(../imgs/logo-portoseguro.webp);
+  background-size: 24rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 
 h2 {
   text-align: center;

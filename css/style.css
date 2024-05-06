@@ -20,33 +20,6 @@ html {
   margin-bottom: 8vh;
 }
 
-.cabecalho-verde {
-  display: flex;
-  height: 6rem;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  background-color: #68ee86;
-  align-self: center;
-  background-image: url(../imgs/logo-portoseguro.webp);
-  background-size: 24rem;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  img {
-    margin-left: 2em;
-    background-color: #ffffff;
-    padding: 0.2em;
-    border-radius: 32px;
-
-    &:hover {
-      transition: 0.8s ease-in;
-      background-color: #3da3d0;
-    }
-  }
-}
-
 #btn-conta {
   display: flex;
   flex-direction: row;
@@ -54,13 +27,7 @@ html {
   margin-right: 24vw;
 }
 
-#conta-container {
-  margin-top: 6vh;
-  h2 {
-    text-align: center;
-    margin-bottom: 5vh;
-  }
-}
+
 
 footer {
   text-align: center;
@@ -75,24 +42,6 @@ input::placeholder {
   color: #3da3d0;
 }
 
-.localizar {
-  display: flex;
-  flex-direction: row;
-  background-image: url(../imgs/teste_maps.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-  height: 100%;
-  align-content: end;
-  position: fixed;
-  flex-wrap: wrap;
-  opacity: 0.9;
-
-  button {
-    margin-bottom: 20vh;
-  }
-}
 
 .integrantes-topo {
   display: flex;
@@ -117,38 +66,6 @@ hr {
   opacity: 0.6;
 }
 
-.integrantes-info {
-  margin-top: 6vh;
-  font-size: 140%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 30vh 6vh 6vh 6vh;
-  justify-items: center;
-}
-
-#img-gabriel {
-  border-radius: 100px;
-  width: 30%;
-  position: relative;
-  margin-bottom: 5vh;
-}
-
-#img-gustavo {
-  border-radius: 320px;
-  width: 40%;
-  position: relative;
-}
-
-#img-nathan {
-  border-radius: 320px;
-  width: 56%;
-  position: relative;
-}
-
-#rodape-integrantes {
-  margin-top: 4vh;
-  font-size: 200%;
-}
 
 .rodape_l {
   display: flex;
@@ -221,10 +138,6 @@ button {
   margin-bottom: 0.8vh;
 }
 
-.rodape-chatbot {
-  display: flex;
-}
-
 #termos {
   float: left;
   text-align: left;
@@ -242,12 +155,7 @@ button {
   font-size: 30px;
 }
 
-#btn-meu-veiculo {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15vh;
-  flex-wrap: wrap;
-}
+
 
 .link-btn {
   text-decoration: none;

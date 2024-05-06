@@ -34,3 +34,41 @@
   align-self: center;
   color: #ffffff;
 }
+
+
+.informativo {
+  margin-bottom: 8vh;
+}
+
+.integrantes-info {
+  margin-top: 6vh;
+  font-size: 140%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 30vh 6vh 6vh 6vh;
+  justify-items: center;
+}
+
+#img-gabriel {
+  border-radius: 100px;
+  width: 30%;
+  position: relative;
+  margin-bottom: 5vh;
+}
+
+#img-gustavo {
+  border-radius: 320px;
+  width: 40%;
+  position: relative;
+}
+
+#img-nathan {
+  border-radius: 320px;
+  width: 56%;
+  position: relative;
+}
+
+#rodape-integrantes {
+  margin-top: 4vh;
+  font-size: 200%;
+}
