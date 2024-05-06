@@ -18,6 +18,12 @@
   position: fixed;
 }
 
+.icone-servico {
+  background-color: #ffffff;
+  border-radius: 32px;
+  width: 55%;
+}
+
 .cabecalho-verde {
   display: flex;
   height: 6rem;
@@ -47,7 +53,7 @@
   font-size: 4vw;
   align-items: center;
   img {
-    width: 4rem;
+    width: 3vw;
     &:hover {
       transition: 1.1s ease-in;
       background-color: #68ee86;
@@ -67,7 +73,7 @@
   color: #ffffff;
   font-size: 4vw;
   img {
-    width: 4rem;
+    width: 3vw;
 
     &:hover {
       transition: 1.1s ease-in;
@@ -88,7 +94,7 @@
   font-size: 4vw;
   align-items: center;
   img {
-    width: 4rem;
+    width: 3vw;
 
     &:hover {
       transition: 1.1s ease-in;

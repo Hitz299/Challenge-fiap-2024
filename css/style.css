@@ -40,25 +40,9 @@ input::placeholder {
   color: #3da3d0;
 }
 
-.integrantes-topo {
-  display: flex;
-  flex-direction: row;
-
-  h1 {
-    margin-top: 8vh;
-    font-size: 3rem;
-  }
-
-  img {
-    width: 30em;
-    height: 6em;
-    margin-top: 4vh;
-    margin-right: 45svw;
-  }
-}
-
 hr {
-  margin-bottom: 2em;
+  margin-top: 2vh;
+  margin-bottom: 1vh;
   width: 40vw;
   opacity: 0.6;
 }
@@ -68,16 +52,11 @@ hr {
   flex-direction: column;
 }
 
-#btn-container {
+.btn-container {
   display: block;
   margin-top: 20vh;
   width: 100vw;
   text-align: center;
-}
-.icone-servico {
-  background-color: #ffffff;
-  border-radius: 32px;
-  width: 55%;
 }
 
 input {
@@ -110,8 +89,8 @@ input {
 }
 
 button {
-  display: flex;
-  padding: 1em 1.4em;
+  display: block;
+  padding: 0.4em;
   background-color: #3da3d0;
   color: rgb(255, 255, 255);
   border-radius: 2em;
@@ -119,7 +98,7 @@ button {
   border-style: solid;
   cursor: pointer;
   margin: auto;
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   width: 16vw;
   justify-content: center;
   align-items: center;
@@ -134,23 +113,11 @@ button {
   margin-bottom: 0.8vh;
 }
 
-#termos {
-  float: left;
-  text-align: left;
-}
-
-#cabecalho-meu-veiculo {
-  display: block;
-  text-align: center;
-  font-size: 1.6em;
-  height: 10vh;
-  background-color: #3da3d0;
-}
-
 .texto {
   font-size: 30px;
 }
 
 .link-btn {
   text-decoration: none;
+  color: rgb(255, 248, 240);
 }

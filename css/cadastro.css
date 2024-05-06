@@ -1,9 +1,33 @@
 .cabecalho-azul {
   display: flex;
   background-color: #3da3d0;
-  padding: 2em;
+  padding: 2.6em;
   position: relative;
   justify-content: center;
+}
+
+.integrantes-topo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  h1 {
+    margin-top: 8vh;
+    font-size: 3rem;
+  }
+
+  img {
+    width: 30em;
+    height: 6em;
+    margin-top: 4vh;
+  }
+}
+
+#btn-redefinir {
+  margin-top: 20vh;
+}
+
+#btn-esqueci {
+  margin-top: 12vh;
 }
 
 .gradient {
@@ -34,7 +58,6 @@
   align-self: center;
   color: #ffffff;
 }
-
 
 .informativo {
   margin-bottom: 8vh;
@@ -71,4 +94,12 @@
 #rodape-integrantes {
   margin-top: 4vh;
   font-size: 200%;
+}
+
+#btn-criar {
+  margin-top: 8vh;
+}
+
+#btn-codigo {
+  margin-top: 8vh;
 }

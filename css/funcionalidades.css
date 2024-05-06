@@ -21,6 +21,11 @@
   }
 }
 
+#termos {
+  float: left;
+  text-align: left;
+}
+
 .chat-container {
   display: flex;
   flex-direction: column;
@@ -237,7 +242,6 @@
   background-position: center;
   background-repeat: no-repeat;
 }
-
 
 h2 {
   text-align: center;
