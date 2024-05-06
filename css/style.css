@@ -27,8 +27,6 @@ html {
   margin-right: 24vw;
 }
 
-
-
 footer {
   text-align: center;
   margin-top: 3vw;
@@ -41,7 +39,6 @@ input::placeholder {
   align-items: center;
   color: #3da3d0;
 }
-
 
 .integrantes-topo {
   display: flex;
@@ -65,7 +62,6 @@ hr {
   width: 40vw;
   opacity: 0.6;
 }
-
 
 .rodape_l {
   display: flex;
@@ -154,8 +150,6 @@ button {
 .texto {
   font-size: 30px;
 }
-
-
 
 .link-btn {
   text-decoration: none;
