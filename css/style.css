@@ -4,24 +4,26 @@ html {
     "Lucida Sans", Arial, sans-serif;
 }
 
-.rodape-link{
+.rodape-link {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+
   flex-wrap: wrap;
   text-align: center;
 }
 
-@media screen and (max-width: 1800px) {
-  .rodape-link{
-  flex-direction: row;
+@media screen and (max-width: 4400px) {
+  .rodape-link {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
-}
-
 
 @media screen and (max-width: 1000px) {
-  .rodape-link{
-  flex-direction: column;
+  .rodape-link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 
@@ -39,13 +41,6 @@ html {
 
 .informativo {
   margin-bottom: 8vh;
-}
-
-#btn-conta {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-right: 24vw;
 }
 
 footer {

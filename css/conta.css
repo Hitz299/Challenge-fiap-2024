@@ -23,12 +23,65 @@
 
 #conta {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 20vh 20vh;
+
   justify-items: center;
   grid-auto-flow: column;
   gap: 4vh;
   align-items: center;
   text-align: center;
   height: 52vh;
+}
+
+#btn-conta {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-inline-start: 20vw;
+  margin-right: 24vw;
+}
+
+@media screen and (max-width: 4400px) {
+  #conta {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 20vh 20vh;
+  }
+  #btn-conta div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 14vw;
+    img {
+      width: 90px;
+      height: 90px;
+    }
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  #conta {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 12vh 12vh 12vh;
+    font-size: 75%;
+
+    input {
+      height: 4vh;
+    }
+  }
+  button {
+    height: 4vh;
+  }
+
+  #btn-conta div {
+    display: flex;
+    flex-direction: column;
+    font-size: 75%;
+    text-align: center;
+    align-items: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
