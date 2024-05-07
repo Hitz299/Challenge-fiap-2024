@@ -45,7 +45,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-inline: 10rem;
+  padding-inline: 10vw;
   background-color: #3da3d0;
   height: 10vh;
   width: 80vw;
@@ -65,7 +65,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-inline: 10rem;
+  padding-inline: 10vw;
   align-items: center;
   background-color: #68ee86;
   height: 10vh;
@@ -86,7 +86,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-inline: 10rem;
+  padding-inline: 10vw;
   background-color: #3da3d0;
   height: 10vh;
   width: 80vw;
