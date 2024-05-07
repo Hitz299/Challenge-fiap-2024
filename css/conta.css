@@ -2,15 +2,17 @@
   display: flex;
   height: 6rem;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   position: relative;
   background-color: #68ee86;
-  align-self: center;
   background-image: url(../imgs/logo-portoseguro.webp);
   background-size: 24rem;
   background-position: center;
   background-repeat: no-repeat;
+  padding-left: 5vw;
+  color: #3da3d0;
+  font-size: 1vw;
 }
 
 #conta-container {
@@ -56,9 +58,14 @@
       height: 90px;
     }
   }
+
+  button {
+    width: 200px;
+    width: 280px;
+  }
 }
 
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1440px) {
   #conta {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 12vh 12vh 12vh;
@@ -69,7 +76,8 @@
     }
   }
   button {
-    height: 4vh;
+    height: 100px;
+    width: 160px;
   }
 
   #btn-conta div {
