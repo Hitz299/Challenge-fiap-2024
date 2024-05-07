@@ -16,6 +16,10 @@ def entrada_valor():
     entrada = input(f"\n")
     return entrada
 
+def entrada_valor_numerico():
+    entrada = int(input(f"\n"))
+    return entrada
+
 print(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
@@ -34,11 +38,12 @@ print(f"\nO usuário foi direcionado para a tela de login\n\n"
       +f"1 -> caso tenha esquecido a senha\n" + 
       f"Qualquer outro valor numérico -> caso queira prosseguir com o login: ")
 
-escolha = int(input(f"\nDigite sua escolha: "))
+print(f"\nDigite sua escolha: ")
+escolha = entrada_valor_numerico()
 
 if escolha == 1:
 
-    print(f"\n Informe seu email para que possamos enviar"
+    print(f"\n Informe seu email para que possamos enviar "
                             +"o código de verificação: ")    
 
     email_recupecao = entrada_valor()    
@@ -48,7 +53,8 @@ if escolha == 1:
         # Simulando o código de verificação sendo enviado para o email do usuário
         print(f"\nO código de verificação é:\n{codigo}")
     
-        codigo_usuario = int(input(f"\nInforme o código de verificação: "))
+        print(f"\nInforme o código de verificação: ")
+        codigo_usuario = entrada_valor_numerico()
     
         while codigo_usuario != codigo:
             print(f"\n\nO Código informado está errado\n")
@@ -56,7 +62,7 @@ if escolha == 1:
         
             print(f"O código de verificação é:\n{codigo}")
         
-            codigo_usuario = int(input(f"Informe o código de verifição: "))
+            codigo_usuario = entrada_valor_numerico()
             
         if codigo == codigo_usuario:
             senha_criar_conta = input(f"\nDigite uma nova senha: ")
@@ -65,8 +71,8 @@ if escolha == 1:
         exit()
 
 print(f"\nInforme seu email: ")
-print(f"\nInforme sua senha: ")
 email_login = entrada_valor()
+print(f"\nInforme sua senha: ")
 senha_login = entrada_valor()
 contador_tentativas = 3
 
@@ -92,10 +98,11 @@ if email_criar_conta == email_login and senha_criar_conta == senha_login:
 
 print(f"\nO usuário foi direcionado para a página inicial do projeto")
 
-escolha = int(input(f"Na tela inicial, o usuário pode escolher entre:\n"
+print(f"Na tela inicial, o usuário pode escolher entre:\n"
                 +f"1 - Adicionar novos veículos a plataforma\n"
-                +f"2 - Acessar informações dos veículos que ele já possui\n\n"))
+                +f"2 - Acessar informações dos veículos que ele já possui\n\n")
 
+escolha = entrada_valor_numerico()
 escolha = erro_entrada(escolha)
 
 match escolha:
@@ -113,9 +120,10 @@ match escolha:
     case 2:
         carros_usuario = ("Ferrari", "Porshe")
         carro_escolhido: str
-        escolha_veiculo = int(input(f"Qual veículo você deseja selecionar?\n"
+        print(f"Qual veículo você deseja selecionar?\n"
                             +f"1 -> {carros_usuario[0]}\n"+
-                            f"2 -> {carros_usuario[1]}\n\n"))
+                            f"2 -> {carros_usuario[1]}\n\n")
+        escolha_veiculo = entrada_valor_numerico()
         
         escolha_veiculo = erro_entrada(escolha_veiculo)
         
@@ -127,10 +135,12 @@ match escolha:
 
         print(f"Você selecionou o veículo {carro_escolhido}")
 
-        escolha = int(input(f"Qual serviço você gostaria de acessar para seu veículo?\n"
+        print(f"Qual serviço você gostaria de acessar para seu veículo?\n"
                             +f"1 -> Localizar veículo\n"
-                            +f"2 -> Inspecionar erros do veículo\n\n"))
-        
+                            +f"2 -> Inspecionar erros do veículo\n\n")
+
+        escolha = entrada_valor_numerico()
+
         escolha = erro_entrada(escolha)
         # Funcionalidade 2 -> Localizar veículo
         if escolha == 1:
@@ -171,8 +181,10 @@ match escolha:
                 print(f"Foram encontrados problemas com os seguintes componentes"
                       +f"de seu veículo:\n{errosList}")
                 
-                escolha = int(input(f"Deseja obter o valor do orçamento?\n"
-                                    "1 -> Sim\n2 -> Não\n"))
+                print(f"Deseja obter o valor do orçamento?\n"
+                                    "1 -> Sim\n2 -> Não\n")
+
+                escolha = entrada_valor_numerico()
                 
                 escolha = erro_entrada(escolha)
                 
