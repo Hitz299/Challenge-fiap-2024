@@ -102,3 +102,18 @@
     }
   }
 }
+
+@media screen and (max-width: 4400px) {
+  #fundo-inicial {
+    img {
+      width: 120px;
+    }
+  }
+}
+@media screen and (max-width: 1920px) {
+  #fundo-inicial {
+    img {
+      width: 80px;
+    }
+  }
+}
