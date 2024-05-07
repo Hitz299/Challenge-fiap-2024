@@ -4,6 +4,27 @@ html {
     "Lucida Sans", Arial, sans-serif;
 }
 
+.rodape-link{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+@media screen and (max-width: 1800px) {
+  .rodape-link{
+  flex-direction: row;
+}
+}
+
+
+@media screen and (max-width: 500px) {
+  .rodape-link{
+  flex-direction: column;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
