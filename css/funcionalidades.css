@@ -228,23 +228,43 @@
   justify-content: center;
 }
 
-.cabecalho-verde {
-  display: flex;
-  height: 6rem;
-  flex-direction: row;
-  justify-content: start;
-  align-items: center;
-  position: relative;
-  background-color: #68ee86;
-  background-image: url(../imgs/logo-portoseguro.webp);
-  background-size: 24rem;
-  background-position: center;
-  background-repeat: no-repeat;
-  padding-left: 5vw;
-  color: #3da3d0;
-  font-size: 1vw;
-}
-
 h2 {
   text-align: center;
+}
+
+@media screen and (max-width: 4400px) {
+  .cabecalho-verde {
+    display: flex;
+    height: 6rem;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    background-color: #68ee86;
+    background-image: url(../imgs/logo-portoseguro.webp);
+    background-size: 22rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 5vw;
+    color: #3da3d0;
+    font-size: 1vw;
+  }
+}
+@media screen and (max-width: 1440px) {
+  .cabecalho-verde {
+    display: flex;
+    height: 6rem;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    position: relative;
+    background-color: #68ee86;
+    background-image: url(../imgs/logo-portoseguro.webp);
+    background-size: 50vw;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding-left: 5vw;
+    color: #3da3d0;
+    font-size: 2vw;
+  }
 }
