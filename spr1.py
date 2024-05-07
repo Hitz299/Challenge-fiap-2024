@@ -9,14 +9,23 @@ import random;
 # entrada inválida
 def erro_entrada(entrada):
     while entrada != 1 and entrada != 2:
-        entrada = int(input("Entrada inválida\n"))
+        entrada = int(input(f"Entrada inválida\n"))
     return entrada
 
-email_criar_conta = input(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
+def entrada_valor():
+    entrada = input(f"\n")
+    return entrada
+
+'''
+print(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
-senha_criar_conta = input(f"Ok, Agora crie uma senha forte para proteger sua conta\n"
+email_criar_conta = entrada_valor()
+
+print(f"Ok, Agora crie uma senha forte para proteger sua conta\n"
               +"Sua senha deve conter no mínimo 8 caracteres: ")
+
+senha_criar_conta = entrada_valor()
 
 while len(senha_criar_conta) < 8 :
     senha_criar_conta = input(f"\nSua senha deve contar mais de 8 caracteres: ")
@@ -28,8 +37,12 @@ print(f"\nO usuário foi direcionado para a tela de login\n\n"
 escolha = int(input(f"\nDigite sua escolha: "))
 
 if escolha == 1:
-    email_recupecao = input(f"\n Informe seu email para que possamos enviar"
+
+    print(f"\n Informe seu email para que possamos enviar"
                             +"o código de verificação: ")    
+
+    email_recupecao = entrada_valor()    
+
     if email_criar_conta == email_recupecao:
         codigo = int(random.randrange(10000, 99999))
         # Simulando o código de verificação sendo enviado para o email do usuário
@@ -50,8 +63,11 @@ if escolha == 1:
     else:
         print(f"Email inválido, você foi desconectado")
         exit()
-email_login = input(f"\nInforme seu email: ")
-senha_login = input(f"\nInforme sua senha: ")
+
+print(f"\nInforme seu email: ")
+print(f"\nInforme sua senha: ")
+email_login = entrada_valor()
+senha_login = entrada_valor()
 contador_tentativas = 3
 
 # Se alguma das credenciais estiver errada, o usuário terá seu acesso negado, porém
@@ -75,7 +91,7 @@ if email_criar_conta == email_login and senha_criar_conta == senha_login:
     print(f"Acesso liberado")
 
 print(f"\nO usuário foi direcionado para a página inicial do projeto")
-
+'''
 escolha = int(input(f"Na tela inicial, o usuário pode escolher entre:\n"
                 +f"1 - Adicionar novos veículos a plataforma\n"
                 +f"2 - Acessar informações dos veículos que ele já possui\n\n"))
@@ -101,12 +117,12 @@ match escolha:
                             +f"1 -> {carros_usuario[0]}\n"+
                             f"2 -> {carros_usuario[1]}\n\n"))
         
-        escolha = erro_entrada(escolha)
+        escolha_veiculo = erro_entrada(escolha_veiculo)
         
-        if escolha == 1:
+        if escolha_veiculo == 1:
                 carro_escolhido = carros_usuario[0]
                
-        elif escolha == 2:
+        elif escolha_veiculo == 2:
                 carro_escolhido = carros_usuario[1]
 
         print(f"Você selecionou o veículo {carro_escolhido}")
