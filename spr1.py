@@ -16,7 +16,6 @@ def entrada_valor():
     entrada = input(f"\n")
     return entrada
 
-'''
 print(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
@@ -28,7 +27,8 @@ print(f"Ok, Agora crie uma senha forte para proteger sua conta\n"
 senha_criar_conta = entrada_valor()
 
 while len(senha_criar_conta) < 8 :
-    senha_criar_conta = input(f"\nSua senha deve contar mais de 8 caracteres: ")
+    print(f"\nSua senha deve contar mais de 8 caracteres: ")
+    senha_criar_conta = entrada_valor()
     
 print(f"\nO usuário foi direcionado para a tela de login\n\n"
       +f"1 -> caso tenha esquecido a senha\n" + 
@@ -91,7 +91,7 @@ if email_criar_conta == email_login and senha_criar_conta == senha_login:
     print(f"Acesso liberado")
 
 print(f"\nO usuário foi direcionado para a página inicial do projeto")
-'''
+
 escolha = int(input(f"Na tela inicial, o usuário pode escolher entre:\n"
                 +f"1 - Adicionar novos veículos a plataforma\n"
                 +f"2 - Acessar informações dos veículos que ele já possui\n\n"))
