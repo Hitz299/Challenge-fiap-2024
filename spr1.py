@@ -5,6 +5,13 @@ import random;
 # a Biblioteca random foi importada para permitir algumas simulações de cenários reais, como por exemplo,
 # simular possíveis defeitos que poderiam ser mostrados ao usuário quando for realizada a inspeção
 
+# Para casos em que o usuário terá que realizar uma escolha no menu interativo e o mesmo digitar uma
+# entrada inválida
+def erro_entrada(entrada):
+    while entrada != 1 and entrada != 2:
+        entrada = int(input("Entrada inválida\n"))
+    return entrada
+
 email_criar_conta = input(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
@@ -73,8 +80,7 @@ escolha = int(input(f"Na tela inicial, o usuário pode escolher entre:\n"
                 +f"1 - Adicionar novos veículos a plataforma\n"
                 +f"2 - Acessar informações dos veículos que ele já possui\n\n"))
 
-while escolha != 1 and escolha != 2:
-    escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
+escolha = erro_entrada(escolha)
 
 match escolha:
     # Funcionalidade 1 -> Adicionar veículo
@@ -95,8 +101,7 @@ match escolha:
                             +f"1 -> {carros_usuario[0]}\n"+
                             f"2 -> {carros_usuario[1]}\n\n"))
         
-        while escolha != 1 and escolha != 2:
-            escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
+        escolha = erro_entrada(escolha)
         
         if escolha == 1:
                 carro_escolhido = carros_usuario[0]
@@ -110,8 +115,7 @@ match escolha:
                             +f"1 -> Localizar veículo\n"
                             +f"2 -> Inspecionar erros do veículo\n\n"))
         
-        while escolha != 1 and escolha != 2:
-            escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
+        escolha = erro_entrada(escolha)
         # Funcionalidade 2 -> Localizar veículo
         if escolha == 1:
             if escolha_veiculo == 1:
@@ -154,8 +158,7 @@ match escolha:
                 escolha = int(input(f"Deseja obter o valor do orçamento?\n"
                                     "1 -> Sim\n2 -> Não\n"))
                 
-                while escolha != 1 and escolha != 2:
-                    escolha = int(input(f"Entrada inválida!\nTente novamente\n\n"))
+                escolha = erro_entrada(escolha)
                 
                 if escolha == 1:
                     valor_orcamento = 0.0
