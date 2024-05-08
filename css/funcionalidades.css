@@ -199,8 +199,7 @@
 }
 
 .localizar {
-  display: flex;
-  flex-direction: row;
+  
   background-image: url(../imgs/teste_maps.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -214,6 +213,11 @@
 
   button {
     margin-bottom: 20vh;
+  }
+  div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
