@@ -21,9 +21,33 @@
   }
 }
 
+input {
+  height: 3.6em;
+  border: none;
+  text-align: center;
+  justify-items: center;
+  padding: 0.6em 1.2em;
+  font-size: 1.6em;
+  border-radius: 32px;
+  background-color: #cececea1;
+  margin-top: 1vh;
+}
+
 #termos {
   float: left;
   text-align: left;
+}
+
+#user-input {
+  padding: 20px;
+  font-size: 1.1em;
+  height: 6vh;
+  width: 14vw;
+
+  &:focus {
+    transition: 1s;
+    width: 36vw;
+  }
 }
 
 .chat-container {
@@ -98,13 +122,15 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
   height: 35vh;
   justify-content: space-between;
   margin-inline: 10vw;
 
   div {
-    display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
   }
 
   label {
@@ -116,10 +142,11 @@
 }
 
 #meus-veiculos-container {
+  display: block;
   background-color: #d4d4d4;
   padding-top: 3vh;
   height: 120vh;
-  width: 100%;
+  width: 100vw;
 }
 
 #titulo-veiculo {
@@ -194,12 +221,9 @@
 #btn-meu-veiculo {
   display: flex;
   flex-direction: row;
-  margin-top: 15vh;
-  flex-wrap: wrap;
+  margin-top: 12vh;
 }
-
 .localizar {
-  
   background-image: url(../imgs/teste_maps.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -214,7 +238,7 @@
   button {
     margin-bottom: 20vh;
   }
-  div{
+  div {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -239,7 +263,7 @@ h2 {
 @media screen and (max-width: 4400px) {
   .cabecalho-verde {
     display: flex;
-    height: 6rem;
+    height: 10vh;
     flex-direction: row;
     justify-content: start;
     align-items: center;
@@ -253,22 +277,36 @@ h2 {
     color: #3da3d0;
     font-size: 1vw;
   }
+
+  input {
+    width: 30vw;
+  }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .cabecalho-verde {
     display: flex;
-    height: 6rem;
+    height: 10vh;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     position: relative;
     background-color: #68ee86;
     background-image: url(../imgs/logo-portoseguro.webp);
-    background-size: 50vw;
+    background-size: 12em;
     background-position: right;
     background-repeat: no-repeat;
     padding-left: 5vw;
     color: #3da3d0;
     font-size: 2vw;
+  }
+
+  input {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  input {
+    width: 380px;
   }
 }

@@ -1,5 +1,5 @@
 html {
-  font-size: 165%;
+  font-size: 62.5%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
 }
@@ -10,30 +10,6 @@ html {
 
   flex-wrap: wrap;
   text-align: center;
-}
-
-@media screen and (max-width: 4400px) {
-  .rodape-link {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  button {
-    height: 140px;
-  }
-}
-
-@media screen and (max-width: 1920px) {
-  .rodape-link {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 4vh;
-  }
-
-  button {
-    height: 100px;
-  }
 }
 
 * {
@@ -85,8 +61,6 @@ hr {
 }
 
 input {
-  width: 24vw;
-  height: 6.8vh;
   border: none;
   text-align: center;
   justify-items: center;
@@ -97,25 +71,13 @@ input {
   margin-top: 1vh;
 }
 
-#user-input {
-  padding: 20px;
-  font-size: 1.1em;
-  height: 6vh;
-  width: 14vw;
-
-  &:focus {
-    transition: 1s;
-    width: 36vw;
-  }
-}
-
 .message {
   margin-bottom: 10px;
 }
 
 button {
   display: block;
-  padding: 0.4em;
+  padding: 0.4vw;
   background-color: #3da3d0;
   color: rgb(255, 255, 255);
   border-radius: 2em;
@@ -123,8 +85,9 @@ button {
   border-style: solid;
   cursor: pointer;
   margin: auto;
-  font-size: 1.8vw;
-  width: 20vw;
+  font-size: 2.2vw;
+  width: 18vw;
+  height: 2.6em;
   justify-content: center;
   align-items: center;
 
@@ -145,4 +108,20 @@ button {
 .link-btn {
   text-decoration: none;
   color: rgb(255, 248, 240);
+}
+
+@media screen and (max-width: 4400px) {
+  .rodape-link {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 1920px) {
+  .rodape-link {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4vh;
+  }
 }
