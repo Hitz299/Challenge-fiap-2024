@@ -85,11 +85,16 @@ button {
   border-style: solid;
   cursor: pointer;
   margin: auto;
-  font-size: 2.2vw;
-  width: 18vw;
-  height: 2.6em;
+  font-size: 1.6vw;
+  width: 10vw;
+  height: 8vh;
   justify-content: center;
   align-items: center;
+
+  a {
+    text-decoration: none;
+    color: aliceblue;
+  }
 
   &:hover {
     transition: 0.8s ease-in;

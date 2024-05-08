@@ -36,6 +36,13 @@
   background-size: 24rem;
   background-position: center;
   background-repeat: no-repeat;
+
+  img {
+    background-color: #ffffff;
+    border-radius: 32px;
+    margin-left: 5vw;
+    border: 0.4vw solid #3da3d0;
+  }
 }
 
 #servico1 {
@@ -100,7 +107,7 @@
 @media screen and (max-width: 4400px) {
   #fundo-inicial {
     img {
-      width: 80px;
+      width: 60px;
     }
   }
 }
@@ -108,6 +115,14 @@
   #fundo-inicial {
     img {
       width: 50px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  #fundo-inicial {
+    img {
+      width: 35px;
     }
   }
 }

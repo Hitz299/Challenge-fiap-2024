@@ -107,6 +107,7 @@ input {
   flex-direction: column;
   padding-top: 6vh;
   text-align: center;
+  align-items: center;
   width: 100vw;
   background-color: #ffffff;
 
@@ -126,10 +127,14 @@ input {
   height: 35vh;
   justify-content: space-between;
   margin-inline: 10vw;
+  width: 100vw;
 
   div {
+    display: block;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    justify-items: center;
     text-align: center;
   }
 
@@ -260,6 +265,10 @@ h2 {
   text-align: center;
 }
 
+.btn-localizar {
+  width: 20vw;
+}
+
 @media screen and (max-width: 4400px) {
   .cabecalho-verde {
     display: flex;
@@ -307,6 +316,6 @@ h2 {
 
 @media screen and (max-width: 767px) {
   input {
-    width: 380px;
+    width: 320px;
   }
 }
