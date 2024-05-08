@@ -36,7 +36,6 @@
   background-size: 24rem;
   background-position: center;
   background-repeat: no-repeat;
-
   img {
     background-color: #ffffff;
     border-radius: 32px;
@@ -56,7 +55,7 @@
   height: 10vh;
   width: 80vw;
   color: #ffffff;
-  font-size: 4vw;
+  font-size: 3vw;
   align-items: center;
   img {
     &:hover {
@@ -76,7 +75,7 @@
   height: 10vh;
   width: 80vw;
   color: #ffffff;
-  font-size: 4vw;
+  font-size: 3vw;
   img {
     &:hover {
       transition: 1.1s ease-in;
@@ -94,7 +93,7 @@
   height: 10vh;
   width: 80vw;
   color: #ffffff;
-  font-size: 4vw;
+  font-size: 3vw;
   align-items: center;
   img {
     &:hover {
