@@ -17,6 +17,10 @@
   height: 52vh;
 }
 
+input {
+  width: 20vw !important;
+}
+
 #btn-conta {
   display: flex;
   flex-direction: row;
@@ -37,14 +41,14 @@
     align-items: center;
     width: 14vw;
     img {
-      width: 90px;
-      height: 90px;
+      width: 45px;
+      height: 45px;
     }
   }
 
   button {
+    height: 60px;
     width: 200px;
-    width: 280px;
   }
 
   .cabecalho-verde {
@@ -74,8 +78,9 @@
       height: 4vh;
     }
   }
+
   button {
-    height: 100px;
+    height: 40px;
     width: 160px;
   }
 
@@ -87,8 +92,8 @@
     align-items: center;
 
     img {
-      width: 50px;
-      height: 50px;
+      width: 30px;
+      height: 30px;
     }
   }
 
