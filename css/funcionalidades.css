@@ -102,15 +102,17 @@ input {
 }
 
 #tela-add {
+  position: absolute;
   display: flex;
   height: 100vh;
   flex-direction: column;
+
   padding-top: 6vh;
   text-align: center;
-  align-items: center;
+  align-content: center;
+
   width: 100vw;
   background-color: #ffffff;
-
   footer {
     margin-top: 8vh;
     font-size: 140%;
@@ -118,32 +120,23 @@ input {
 }
 
 .input-add {
+  position: relative;
   display: flex;
+  width: 100vw;
+  margin: auto;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-items: center;
   align-items: center;
   text-align: center;
   height: 35vh;
   justify-content: space-between;
-  margin-inline: 10vw;
-  width: 100vw;
-
-  div {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    justify-items: center;
-    text-align: center;
-  }
-
-  label {
-    color: #ffffff;
-    font-size: 160%;
-    text-align: start;
-    margin-left: 1vw;
-  }
+}
+.inp-add {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 
 #meus-veiculos-container {
@@ -291,7 +284,7 @@ h2 {
     width: 30vw;
   }
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1440px) {
   .cabecalho-verde {
     display: flex;
     height: 10vh;
@@ -310,7 +303,14 @@ h2 {
   }
 
   input {
-    width: 600px;
+    width: 540px;
+  }
+
+  .input-add {
+    height: 50vh;
+    flex-direction: column;
+    padding: 4vw;
+    padding-bottom: 4vh;
   }
 }
 
