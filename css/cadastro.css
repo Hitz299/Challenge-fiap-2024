@@ -23,15 +23,15 @@ input {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  justify-items: center;
   h1 {
     margin-top: 8vh;
-    font-size: 3rem;
+    font-size: 3vw;
   }
 
   img {
-    width: 30em;
-    height: 6em;
-    margin-top: 4vh;
+    width: 20vw;
+    margin-top: 8vh;
   }
 }
 
@@ -79,10 +79,16 @@ input {
 .integrantes-info {
   margin-top: 6vh;
   display: grid;
-  justify-content: center;
   grid-template-columns: 30vw 30vw 30vw;
-  grid-template-rows: 30vh 6vh 6vh 6vh;
   justify-items: center;
+
+  span {
+    margin-top: 2vh;
+  }
+
+  a {
+    margin-top: 2vh;
+  }
 }
 
 .github {
@@ -110,7 +116,7 @@ input {
 
 #rodape-integrantes {
   margin-top: 4vh;
-  font-size: 200%;
+  font-size: 100%;
 }
 
 #btn-criar {
@@ -119,4 +125,22 @@ input {
 
 #btn-codigo {
   margin-top: 8vh;
+}
+
+@media screen and (max-width: 761) {
+  .integrantes-info {
+    grid-template-rows: 14vh 10vh 10vh 10vh;
+  }
+}
+
+@media screen and (max-width: 1440) {
+  .integrantes-info {
+    grid-template-rows: 30vh 8vh 8vh 8vh;
+  }
+}
+
+@media screen and (max-width: 4400) {
+  .integrantes-info {
+    grid-template-rows: 30vh 8vh 8vh 8vh;
+  }
 }
