@@ -82,6 +82,7 @@ input {
   button {
     height: 40px;
     width: 160px;
+    margin-left: 10vw;
   }
 
   #btn-conta div {
@@ -106,11 +107,17 @@ input {
     position: relative;
     background-color: #68ee86;
     background-image: url(../imgs/logo-portoseguro.webp);
-    background-size: 50vw;
+    background-size: 22rem;
     background-position: right;
     background-repeat: no-repeat;
     padding-left: 5vw;
     color: #3da3d0;
     font-size: 2vw;
+  }
+}
+
+@media screen and (max-width: 761px) {
+  button {
+    margin-left: 20vw;
   }
 }

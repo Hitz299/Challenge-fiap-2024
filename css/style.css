@@ -87,7 +87,6 @@ button {
   margin: auto;
   font-size: 1.6vw;
   width: 10vw;
-  height: 8vh;
   justify-content: center;
   align-items: center;
 
@@ -128,5 +127,17 @@ button {
     justify-content: center;
     align-items: center;
     gap: 4vh;
+  }
+}
+
+@media screen and (max-height: 741px) {
+  button {
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 761px) {
+  button {
+    height: 30px;
   }
 }

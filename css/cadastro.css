@@ -78,11 +78,15 @@ input {
 
 .integrantes-info {
   margin-top: 6vh;
-  font-size: 140%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  grid-template-columns: 30vw 30vw 30vw;
   grid-template-rows: 30vh 6vh 6vh 6vh;
   justify-items: center;
+}
+
+.github {
+  width: 12%;
 }
 
 #img-gabriel {
