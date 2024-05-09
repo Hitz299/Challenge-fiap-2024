@@ -20,6 +20,12 @@ def entrada_valor_numerico():
     entrada = int(input(f"\n"))
     return entrada
 
+def quant_caracteres(entrada):
+   while len(entrada) < 8 :
+        print(f"\nEntrada inválida, você deve informar uma senha com no mínimo 8 caracteres: ")
+        entrada = entrada_valor()
+   return entrada
+
 print(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
@@ -30,10 +36,8 @@ print(f"Ok, Agora crie uma senha forte para proteger sua conta\n"
 
 senha_criar_conta = entrada_valor()
 
-while len(senha_criar_conta) < 8 :
-    print(f"\nSua senha deve contar mais de 8 caracteres: ")
-    senha_criar_conta = entrada_valor()
-    
+senha_criar_conta = quant_caracteres(senha_criar_conta)
+
 print(f"\nO usuário foi direcionado para a tela de login\n\n"
       +f"1 -> caso tenha esquecido a senha\n" + 
       f"Qualquer outro valor numérico -> caso queira prosseguir com o login: ")
@@ -65,7 +69,9 @@ if escolha == 1:
             codigo_usuario = entrada_valor_numerico()
             
         if codigo == codigo_usuario:
-            senha_criar_conta = input(f"\nDigite uma nova senha: ")
+            print(f"\nDigite uma nova senha: ")
+            senha_criar_conta =  entrada_valor()
+            senha_criar_conta = quant_caracteres(senha_criar_conta)
     else:
         print(f"Email inválido, você foi desconectado")
         exit()
