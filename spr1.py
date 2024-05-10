@@ -31,7 +31,7 @@ def menu():
 
     print(f"Na tela inicial, o usuário pode escolher entre:\n"
                 +f"1 - Adicionar novos veículos a plataforma\n"
-                +f"2 - Acessar informações dos veículos que ele já possui\n\n")
+                +f"2 - Acessar informações dos veículos que ele já possui\n")
     escolha = entrada_valor_numerico()
     escolha = erro_entrada(escolha)
     return escolha
@@ -216,6 +216,19 @@ while senha_login != senha_criar_conta or email_criar_conta != email_login:
 if email_criar_conta == email_login and senha_criar_conta == senha_login:
     print(f"Acesso liberado")
 
-escolha = menu()
+sair = False
 
-funcionalidades(escolha)
+while sair == False:
+    escolha = menu()
+
+    funcionalidades(escolha)
+    
+    print("\nVocê deseja continuar na plataforma?\n" +
+          "1 -> Sim\n2-> Não")
+    
+    escolha = entrada_valor_numerico()
+    erro_entrada(escolha)
+    
+    if escolha == 2:
+        print("Até a próxima!")
+        sair = True
