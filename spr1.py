@@ -26,6 +26,16 @@ def quant_caracteres(entrada):
         entrada = entrada_valor()
    return entrada
 
+def menu():
+    print(f"\nO usuário foi direcionado para a página inicial do projeto")
+
+    print(f"Na tela inicial, o usuário pode escolher entre:\n"
+                +f"1 - Adicionar novos veículos a plataforma\n"
+                +f"2 - Acessar informações dos veículos que ele já possui\n\n")
+    escolha = entrada_valor_numerico()
+    escolha = erro_entrada(escolha)
+    return escolha
+
 print(f"Vamos criar uma conta para você!\n Comece seu cadastro\n"
               +"Informando seu E-mail: ")
 
@@ -102,14 +112,7 @@ while senha_login != senha_criar_conta or email_criar_conta != email_login:
 if email_criar_conta == email_login and senha_criar_conta == senha_login:
     print(f"Acesso liberado")
 
-print(f"\nO usuário foi direcionado para a página inicial do projeto")
-
-print(f"Na tela inicial, o usuário pode escolher entre:\n"
-                +f"1 - Adicionar novos veículos a plataforma\n"
-                +f"2 - Acessar informações dos veículos que ele já possui\n\n")
-
-escolha = entrada_valor_numerico()
-escolha = erro_entrada(escolha)
+escolha = menu()
 
 match escolha:
     # Funcionalidade 1 -> Adicionar veículo
