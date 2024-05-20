@@ -240,11 +240,12 @@ input {
   button {
     margin-bottom: 20vh;
   }
-  div {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
+}
+
+#btn-localizar-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .cabecalho-azul {

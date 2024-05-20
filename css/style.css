@@ -112,6 +112,37 @@ button {
 .link-btn {
   text-decoration: none;
   color: rgb(255, 248, 240);
+  text-decoration: none;
+}
+
+.btn-link {
+  display: block;
+  padding: 0.4vw;
+  background-color: #3da3d0;
+  color: rgb(255, 255, 255);
+  border-radius: 2em;
+  border-color: #fdfdfdec;
+  border-style: solid;
+  cursor: pointer;
+  margin: auto;
+  font-size: 1.6vw;
+  width: 10vw;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  margin-top: 5vh;
+  padding: 10px;
+
+  a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 0.8em;
+  }
+
+  &:hover {
+    transition: 0.8s ease-in;
+    background-color: #68ee86;
+  }
 }
 
 @media screen and (max-width: 4400px) {
@@ -134,10 +165,18 @@ button {
   button {
     height: 40px;
   }
+
+  .btn-link {
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 761px) {
   button {
+    height: 30px;
+  }
+
+  .btn-link {
     height: 30px;
   }
 }
