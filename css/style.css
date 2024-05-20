@@ -41,13 +41,6 @@ input::placeholder {
   color: #3da3d0;
 }
 
-hr {
-  margin-top: 2vh;
-  margin-bottom: 1vh;
-  width: 40vw;
-  opacity: 0.6;
-}
-
 .rodape_l {
   display: flex;
   flex-direction: column;
