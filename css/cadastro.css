@@ -139,8 +139,10 @@ input {
   border: inset 0.15vw rgb(153, 0, 255);
   margin-bottom: 6vh;
 
-  img {
-    width: 26%;
+  a {
+    text-decoration: none;
+    color: rgb(153, 0, 255);
+    font-weight: bold;
   }
 }
 
@@ -148,6 +150,10 @@ input {
   #repositorio-container {
     height: 20px;
     width: 100px;
+
+    a {
+      font-size: 6px;
+    }
   }
 }
 
@@ -155,6 +161,14 @@ input {
   #repositorio-container {
     height: 40px;
     width: 200px;
+
+    a {
+      font-size: 14px;
+    }
+
+    img {
+      width: 6vw;
+    }
   }
 }
 
@@ -162,5 +176,7 @@ input {
   #repositorio-container {
     height: 80px;
     width: 300px;
+
+    
   }
 }
