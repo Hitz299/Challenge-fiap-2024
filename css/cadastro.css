@@ -97,20 +97,20 @@ input {
 
 #img-gabriel {
   border-radius: 100px;
-  width: 30%;
+  width: 24%;
   position: relative;
   margin-bottom: 5vh;
 }
 
 #img-gustavo {
   border-radius: 320px;
-  width: 40%;
+  width: 30%;
   position: relative;
 }
 
 #img-nathan {
   border-radius: 320px;
-  width: 56%;
+  width: 40%;
   position: relative;
 }
 
@@ -127,20 +127,40 @@ input {
   margin-top: 8vh;
 }
 
-@media screen and (max-width: 761) {
-  .integrantes-info {
-    grid-template-rows: 14vh 10vh 10vh 10vh;
+#repositorio-container {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  border-radius: 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  padding: 1.5%;
+  border: inset 0.15vw rgb(153, 0, 255);
+  margin-bottom: 6vh;
+
+  img {
+    width: 26%;
   }
 }
 
-@media screen and (max-width: 1440) {
-  .integrantes-info {
-    grid-template-rows: 30vh 8vh 8vh 8vh;
+@media screen and (max-width: 761px) {
+  #repositorio-container {
+    height: 20px;
+    width: 100px;
   }
 }
 
-@media screen and (max-width: 4400) {
-  .integrantes-info {
-    grid-template-rows: 30vh 8vh 8vh 8vh;
+@media screen and (max-width: 1440px) {
+  #repositorio-container {
+    height: 40px;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 4400px) {
+  #repositorio-container {
+    height: 80px;
+    width: 300px;
   }
 }
