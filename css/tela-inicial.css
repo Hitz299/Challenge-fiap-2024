@@ -23,6 +23,10 @@
   border-radius: 32px;
 }
 
+#icone-conta {
+  width: 5%;
+}
+
 .cabecalho-verde {
   display: flex;
   height: 10vh;
